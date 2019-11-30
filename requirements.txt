@@ -21,3 +21,5 @@ pywin32-ctypes==0.2.0
 six==1.13.0
 soupsieve==1.9.5
 wrapt==1.11.2
+vk==2.0.2
+vk_api==11.6.1
