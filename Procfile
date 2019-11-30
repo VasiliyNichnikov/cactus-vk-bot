@@ -1,1 +1,1 @@
-web: python StartServer.py
+web: python StartServers.py
