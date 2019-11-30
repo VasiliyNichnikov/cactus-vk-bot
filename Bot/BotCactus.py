@@ -2,8 +2,6 @@ import vk_api
 import requests
 import json
 #  from vk_api import VkUpload
-from Bot.Survey import Survey
-from Bot.WorkingMessage import WorkMessage
 from Bot.GeneralGathering import GeneralGathering
 from vk_api.bot_longpoll import VkBotLongPoll, VkBotEventType
 from vk_api.utils import get_random_id
