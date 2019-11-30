@@ -1,1 +1,1 @@
-bot: python StartServers.py
+worker: python StartServers.py
