@@ -1,1 +1,1 @@
-web: python StartServers.py
+bot: python StartServers.py
