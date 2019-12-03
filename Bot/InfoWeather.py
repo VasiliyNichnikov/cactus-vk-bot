@@ -17,7 +17,7 @@ class InfoWeather:
         weatherMainInfo = receivedInfo.find('div', class_='card_size_big')
         #  print(weatherOnTenDays)
 
-        print(weatherMainInfo.prettify())
+        # print(weatherMainInfo.prettify())
         # Температура сейчас
         condition = weatherMainInfo.find('div', class_='link__condition day-anchor i-bem').text  # Состояние погоды
         temperature = weatherMainInfo.find('div', class_='temp fact__temp fact__temp_size_s').text
@@ -26,7 +26,7 @@ class InfoWeather:
         humidity = weatherMainInfo.find('div', 'term term_orient_v fact__humidity').text  # Влажность
         pressure = weatherMainInfo.find('div', 'term term_orient_v fact__pressure').text  # Давление
 
-        resLine = 'Температура: {}°.\n' \
+        resLine = 'Температура: {}.\n' \
                   '{} \n ' \
                   'Состояние погоды: {} \n' \
                   'Ветер: {}м/с.\n' \
