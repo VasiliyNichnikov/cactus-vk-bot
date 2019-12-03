@@ -27,12 +27,12 @@ class InfoWeather:
         pressure = weatherMainInfo.find('div', 'term term_orient_v fact__pressure').text  # Давление
 
         resLine = 'Температура: {}.\n' \
-                  '{} \n ' \
-                  'Состояние погоды: {} \n' \
+                  '{}. \n ' \
+                  'Состояние погоды: {}.\n' \
                   'Ветер: {}м/с.\n' \
                   'Влажность: {}.\n' \
-                  'Давление: {}\n' \
-                  'Информация взята с сервиса Яндекс (Яндекс Погода). \n' \
+                  'Давление: {}.\n' \
+                  'Информация взята с сервиса Яндекс (Яндекс Погода).\n' \
                   'Данная функция пока определяет погоду только в Москве :('.format(temperature, feels, condition,
                                                                                     windSpeed, humidity, pressure)
         self.parent.SendMessage(self.chatId, resLine)
