@@ -44,15 +44,14 @@ class Server:
             # Создает классы всех команд
             dictCommandsBot = {'!общий сбор': GeneralGathering(self.vk_api, self.chat_id,
                                                                isAdmin=self.CheckAdminGroup(user_name), parent=self),
-                               '!погода': InfoWeather(self.vk_api, self.chat_id, self)}
-            if userMessage.lower() in dictCommandsBot.keys():
-                dictCommandsBot[userMessage].Command()
-            # try:
-            #     # работа с сообщением пользователя
-            #     if userMessage.lower() in dictCommandsBot.keys():
-            #         dictCommandsBot[userMessage].Command()
-            # except:
-            #     self.SendMessage(self.chat_id, "Error 01")
+                               '!погода': InfoWeather(self.vk_api, self.chat_id, self)
+                               }
+            try:
+                #  работа с сообщением пользователя
+                if userMessage.lower() in dictCommandsBot.keys():
+                    dictCommandsBot[userMessage].Command()
+            except:
+                self.SendMessage(self.chat_id, "Error 01")
 
     # Метод для отправки сообщений в группу
     def SendMessage(self, chat_id, messageText, addFiles=None):
