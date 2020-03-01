@@ -3,7 +3,8 @@ import requests
 import json
 from Bot.GeneralGathering import GeneralGathering
 from Bot.InfoWeather import InfoWeather
-from vk_api.bot_longpoll import VkBotLongPoll, VkBotEventType
+from Bot.Reminder import Reminder
+from vk_api.bot_longpoll import VkBotLongPoll
 from vk_api.utils import get_random_id
 
 # Токен бота
@@ -30,6 +31,7 @@ class Server:
         self.vk_app_api = self.app.get_api()
         # id чата
         self.chat_id = 0
+        self.group_id = group_id
         # Запуск команды, которая получает и обрабатывает сообщения
         self.ObtainingInformation()
 
@@ -37,6 +39,7 @@ class Server:
     def ObtainingInformation(self):
         for event in self.long_poll.listen():
             self.chat_id = event.chat_id
+            print(event.obj.message_id)
             # Сообщение пользователя
             userMessage = event.obj.text.lower()
             # Имя пользователя
@@ -44,14 +47,17 @@ class Server:
             # Создает классы всех команд
             dictCommandsBot = {'!общий сбор': GeneralGathering(self.vk_api, self.chat_id,
                                                                isAdmin=self.CheckAdminGroup(user_name), parent=self),
-                               '!погода': InfoWeather(self.vk_api, self.chat_id, self)
+                               '!погода': InfoWeather(self.vk_api, self.chat_id, self),
+                               '!напоминание': Reminder(self.vk_api, self.chat_id, self)
                                }
-            try:
-                #  работа с сообщением пользователя
-                if userMessage.lower() in dictCommandsBot.keys():
-                    dictCommandsBot[userMessage].Command()
-            except:
-                self.SendMessage(self.chat_id, "Error 01")
+            if userMessage.lower() in dictCommandsBot.keys():
+                dictCommandsBot[userMessage].Command()
+            # try:
+            #     #  работа с сообщением пользователя
+            #     if userMessage.lower() in dictCommandsBot.keys():
+            #         dictCommandsBot[userMessage].Command()
+            # except:
+            #     self.SendMessage(self.chat_id, "Error 01")
 
     # Метод для отправки сообщений в группу
     def SendMessage(self, chat_id, messageText, addFiles=None):
