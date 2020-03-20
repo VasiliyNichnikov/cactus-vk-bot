@@ -4,14 +4,14 @@
     [{
       "action": {
         "type": "text",
-        "label": "ЕГЭ"
+        "label": "ТОЧНОЕ ВРЕМЯ"
       },
       "color": "positive"
     },
       {
         "action": {
           "type": "text",
-          "label": "ОГЭ"
+          "label": "-"
         },
         "color": "positive"
       }]

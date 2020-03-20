@@ -2,19 +2,64 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a78ce58-d61a-4b01-8c34-4615c52f3886" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Bot/EditMessage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bot/Reminder.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bot/SchoolDiary.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotTeacher/EGE.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotTeacher/Main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CactusDel/CreatingCases.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CactusDel/MainScript.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CactusDel/SendMessages.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/keyboards/keyboard.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/keyboards/keyboardEGE.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KateBot/Main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KateBot/static/images/kate_1.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KateBot/static/images/kate_10.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KateBot/static/images/kate_11.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KateBot/static/images/kate_12.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KateBot/static/images/kate_13.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KateBot/static/images/kate_14.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KateBot/static/images/kate_15.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KateBot/static/images/kate_16.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KateBot/static/images/kate_17.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KateBot/static/images/kate_18.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KateBot/static/images/kate_19.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KateBot/static/images/kate_2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KateBot/static/images/kate_20.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KateBot/static/images/kate_21.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KateBot/static/images/kate_22.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KateBot/static/images/kate_23.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KateBot/static/images/kate_24.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KateBot/static/images/kate_25.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KateBot/static/images/kate_26.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KateBot/static/images/kate_27.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KateBot/static/images/kate_28.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KateBot/static/images/kate_29.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KateBot/static/images/kate_3.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KateBot/static/images/kate_30.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KateBot/static/images/kate_31.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KateBot/static/images/kate_32.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KateBot/static/images/kate_33.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KateBot/static/images/kate_34.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KateBot/static/images/kate_35.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KateBot/static/images/kate_36.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KateBot/static/images/kate_37.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KateBot/static/images/kate_38.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KateBot/static/images/kate_39.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KateBot/static/images/kate_4.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KateBot/static/images/kate_40.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KateBot/static/images/kate_41.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KateBot/static/images/kate_42.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KateBot/static/images/kate_43.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KateBot/static/images/kate_44.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KateBot/static/images/kate_45.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KateBot/static/images/kate_46.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KateBot/static/images/kate_47.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KateBot/static/images/kate_48.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KateBot/static/images/kate_49.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KateBot/static/images/kate_5.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KateBot/static/images/kate_50.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KateBot/static/images/kate_6.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KateBot/static/images/kate_7.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KateBot/static/images/kate_8.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KateBot/static/images/kate_9.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/VK bot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/VK bot.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bot/BotCactus.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bot/BotCactus.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BotTeacher/EGE.py" beforeDir="false" afterPath="$PROJECT_DIR$/BotTeacher/EGE.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BotTeacher/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/BotTeacher/Main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/StartServers.py" beforeDir="false" afterPath="$PROJECT_DIR$/StartServers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keyboards/keyboard.json" beforeDir="false" afterPath="$PROJECT_DIR$/keyboards/keyboard.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +90,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\vnich\OneDrive\cactus-vk-bot\KateBot" />
       <recent name="C:\Users\vnich\YandexDisk\Bot_VK\keyboards" />
       <recent name="C:\Users\vnich\YandexDisk\Bot_VK\Bot" />
       <recent name="C:\Users\vnich\YandexDisk\VK bot" />
@@ -52,7 +98,7 @@
     </key>
   </component>
   <component name="RunManager" selected="Python.StartServers">
-    <configuration name="BotCactus" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="VK bot" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -60,11 +106,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Bot" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/KateBot" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Bot/BotCactus.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/KateBot/Main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -160,10 +206,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.StartServers" />
+        <item itemvalue="Python.Main (1)" />
         <item itemvalue="Python.Main" />
         <item itemvalue="Python.MainScript" />
         <item itemvalue="Python.SchoolDiary" />
-        <item itemvalue="Python.BotCactus" />
       </list>
     </recent_temporary>
   </component>
@@ -338,26 +384,50 @@
     </state>
     <state x="1060" y="294" key="FileChooserDialogImpl/-1920.0.1920.1080/0.0.2560.1080@0.0.2560.1080" timestamp="1576170838913" />
     <state x="1060" y="294" key="FileChooserDialogImpl/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1583057748863" />
-    <state width="2539" height="383" key="GridCell.Tab.0.bottom" timestamp="1583057728590">
+    <state width="2539" height="295" key="GridCell.Tab.0.bottom" timestamp="1584723116255">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state width="2539" height="383" key="GridCell.Tab.0.bottom/-1920.0.1920.1080/0.0.2560.1080@0.0.2560.1080" timestamp="1576088194192" />
-    <state width="2539" height="383" key="GridCell.Tab.0.bottom/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1583057728590" />
-    <state width="2539" height="383" key="GridCell.Tab.0.center" timestamp="1583057728590">
+    <state width="2539" height="295" key="GridCell.Tab.0.bottom/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1584723116255" />
+    <state width="2539" height="295" key="GridCell.Tab.0.center" timestamp="1584723116254">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state width="2539" height="383" key="GridCell.Tab.0.center/-1920.0.1920.1080/0.0.2560.1080@0.0.2560.1080" timestamp="1576088194192" />
-    <state width="2539" height="383" key="GridCell.Tab.0.center/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1583057728590" />
-    <state width="2539" height="383" key="GridCell.Tab.0.left" timestamp="1583057728590">
+    <state width="2539" height="295" key="GridCell.Tab.0.center/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1584723116254" />
+    <state width="2539" height="295" key="GridCell.Tab.0.left" timestamp="1584723116254">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state width="2539" height="383" key="GridCell.Tab.0.left/-1920.0.1920.1080/0.0.2560.1080@0.0.2560.1080" timestamp="1576088194192" />
-    <state width="2539" height="383" key="GridCell.Tab.0.left/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1583057728590" />
-    <state width="2539" height="383" key="GridCell.Tab.0.right" timestamp="1583057728590">
+    <state width="2539" height="295" key="GridCell.Tab.0.left/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1584723116254" />
+    <state width="2539" height="295" key="GridCell.Tab.0.right" timestamp="1584723116254">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state width="2539" height="383" key="GridCell.Tab.0.right/-1920.0.1920.1080/0.0.2560.1080@0.0.2560.1080" timestamp="1576088194192" />
-    <state width="2539" height="383" key="GridCell.Tab.0.right/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1583057728590" />
+    <state width="2539" height="295" key="GridCell.Tab.0.right/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1584723116254" />
+    <state width="2539" height="363" key="GridCell.Tab.1.bottom" timestamp="1584720781785">
+      <screen x="0" y="0" width="2560" height="1080" />
+    </state>
+    <state width="2539" height="363" key="GridCell.Tab.1.bottom/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1584720781785" />
+    <state width="2539" height="363" key="GridCell.Tab.1.center" timestamp="1584720781785">
+      <screen x="0" y="0" width="2560" height="1080" />
+    </state>
+    <state width="2539" height="363" key="GridCell.Tab.1.center/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1584720781785" />
+    <state width="2539" height="363" key="GridCell.Tab.1.left" timestamp="1584720781785">
+      <screen x="0" y="0" width="2560" height="1080" />
+    </state>
+    <state width="2539" height="363" key="GridCell.Tab.1.left/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1584720781785" />
+    <state width="2539" height="363" key="GridCell.Tab.1.right" timestamp="1584720781785">
+      <screen x="0" y="0" width="2560" height="1080" />
+    </state>
+    <state width="2539" height="363" key="GridCell.Tab.1.right/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1584720781785" />
+    <state x="781" y="182" key="SettingsEditor" timestamp="1584721647925">
+      <screen x="0" y="0" width="2560" height="1080" />
+    </state>
+    <state x="781" y="182" key="SettingsEditor/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1584721647925" />
+    <state x="872" y="273" key="Vcs.Push.Dialog.v2" timestamp="1584723140793">
+      <screen x="0" y="0" width="2560" height="1080" />
+    </state>
+    <state x="872" y="273" key="Vcs.Push.Dialog.v2/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1584723140793" />
     <state x="976" y="363" key="com.intellij.ide.util.TipDialog" timestamp="1583057742375">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
@@ -368,5 +438,15 @@
     </state>
     <state x="943" y="235" width="672" height="678" key="search.everywhere.popup/-1920.0.1920.1080/0.0.2560.1080@0.0.2560.1080" timestamp="1576957163234" />
     <state x="943" y="235" width="672" height="678" key="search.everywhere.popup/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1579950183443" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/BotTeacher/EGE.py</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
