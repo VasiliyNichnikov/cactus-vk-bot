@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a78ce58-d61a-4b01-8c34-4615c52f3886" name="Default Changelist" comment="">
+    <list default="true" id="1a78ce58-d61a-4b01-8c34-4615c52f3886" name="Default Changelist" comment="Sending messages to individual users (1)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KateBot/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/KateBot/Main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -193,7 +194,7 @@
       <updated>1570625996345</updated>
       <workItem from="1584794105344" duration="8050000" />
       <workItem from="1584806580497" duration="217000" />
-      <workItem from="1584806941912" duration="241000" />
+      <workItem from="1584806941912" duration="1012000" />
     </task>
     <task id="LOCAL-00001" summary="Ready One">
       <created>1575151266601</created>
@@ -335,7 +336,28 @@
       <option name="project" value="LOCAL" />
       <updated>1584806685120</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Sending messages to individual users">
+      <created>1584807258107</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1584807258107</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Sending messages to individual users (1)">
+      <created>1584807324521</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1584807324521</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Sending messages to individual users (1)">
+      <created>1584807347932</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1584807347932</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -361,13 +383,14 @@
     <MESSAGE value="Weather function update" />
     <MESSAGE value="Kate Bot" />
     <MESSAGE value="Sending messages to individual users" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sending messages to individual users" />
+    <MESSAGE value="Sending messages to individual users (1)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sending messages to individual users (1)" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="934" y="134" key="CommitChangelistDialog2" timestamp="1584807341815">
+    <state x="934" y="134" key="CommitChangelistDialog2" timestamp="1584807356599">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state x="934" y="134" key="CommitChangelistDialog2/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1584807341815" />
+    <state x="934" y="134" key="CommitChangelistDialog2/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1584807356599" />
     <state x="1060" y="294" key="FileChooserDialogImpl" timestamp="1583057748863">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
@@ -409,10 +432,10 @@
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state x="781" y="182" key="SettingsEditor/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1584721647925" />
-    <state x="872" y="273" key="Vcs.Push.Dialog.v2" timestamp="1584806690654">
+    <state x="872" y="273" key="Vcs.Push.Dialog.v2" timestamp="1584807361676">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state x="872" y="273" key="Vcs.Push.Dialog.v2/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1584806690654" />
+    <state x="872" y="273" key="Vcs.Push.Dialog.v2/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1584807361676" />
     <state x="976" y="363" key="com.intellij.ide.util.TipDialog" timestamp="1584806950711">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>

@@ -68,7 +68,7 @@ class Server:
             self.dict_date_check[num_day] = True
             num_day = self.period(True)
             # Текст, который отправится в сообщение
-            text = f'{self.period()}, {self.mini_phrases(num_day)}'
+            text = f'{self.period()}. {self.mini_phrases(num_day)}'
             # Отправка сообщения
             self.send_msg(user_peer_id, text, self.load_image(num_day))
 
