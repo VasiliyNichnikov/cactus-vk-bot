@@ -21,7 +21,7 @@ class Server:
     date_end = datetime(2020, 4, 14)
 
     # словарь, который проверяет, отправлял бот или нет уведомление
-    dict_date_check = {}
+    # dict_date_check = {}
 
     def __init__(self, api_token, app_token, group_id, server_name="None"):
         test = requests.get('http://carbrain.org/vk_bot/')
@@ -63,15 +63,16 @@ class Server:
     # Отпрака сообщений каждый день
     def send_msg_every_day(self, user_peer_id):
         num_day = self.period(True)
-        if num_day not in self.dict_date_check:
-            # Добавляем в словарь
-            self.dict_date_check[num_day] = True
-            num_day = self.period(True)
-            # Текст, который отправится в сообщение
-            text = f'{self.period()}. {self.mini_phrases(num_day)}'
-            # Отправка сообщения
-            print('Отправка сообщения:', text)
-            self.send_msg(user_peer_id, text, self.load_image(num_day))
+        #  if num_day not in self.dict_date_check:
+        # Добавляем в словарь
+        #  self.dict_date_check[num_day] = True
+        # Номер дня
+        num_day = self.period(True)
+        # Текст, который отправится в сообщение
+        text = f'{self.period()}. {self.mini_phrases(num_day)}'
+        # Отправка сообщения
+        print('Отправка сообщения:', text)
+        self.send_msg(user_peer_id, text, self.load_image(num_day))
 
     # Загрузка фото (Возвращает фото по дате)
     def load_image(self, num_day):

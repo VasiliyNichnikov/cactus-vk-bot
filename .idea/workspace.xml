@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a78ce58-d61a-4b01-8c34-4615c52f3886" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KateBot/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/KateBot/Main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -193,7 +194,7 @@
       <workItem from="1584794105344" duration="8050000" />
       <workItem from="1584806580497" duration="217000" />
       <workItem from="1584806941912" duration="1359000" />
-      <workItem from="1584824885868" duration="774000" />
+      <workItem from="1584824885868" duration="1183000" />
     </task>
     <task id="LOCAL-00001" summary="Ready One">
       <created>1575151266601</created>
@@ -377,7 +378,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584825619714</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Sending messages to individual users (2)">
+      <created>1584825668153</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1584825668153</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -408,10 +416,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="Sending messages to individual users (2)" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="934" y="134" key="CommitChangelistDialog2" timestamp="1584825618490">
+    <state x="934" y="134" key="CommitChangelistDialog2" timestamp="1584825667119">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state x="934" y="134" key="CommitChangelistDialog2/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1584825618490" />
+    <state x="934" y="134" key="CommitChangelistDialog2/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1584825667119" />
     <state x="1060" y="294" key="FileChooserDialogImpl" timestamp="1583057748863">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
@@ -452,10 +460,10 @@
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state x="781" y="182" key="SettingsEditor/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1584721647925" />
-    <state x="872" y="273" key="Vcs.Push.Dialog.v2" timestamp="1584825413359">
+    <state x="872" y="273" key="Vcs.Push.Dialog.v2" timestamp="1584825679255">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state x="872" y="273" key="Vcs.Push.Dialog.v2/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1584825413359" />
+    <state x="872" y="273" key="Vcs.Push.Dialog.v2/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1584825679255" />
     <state x="976" y="363" key="com.intellij.ide.util.TipDialog" timestamp="1584824907365">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
