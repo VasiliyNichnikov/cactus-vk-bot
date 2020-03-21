@@ -3,7 +3,7 @@
 from KateBot.Main import Server
 
 # токен вк api
-vk_api_token = "4f22434cd699dd0209b3c5e60f9d5aac529c9364f88da3a3c4d4b7b6c2251f7cecc4f0836a5b59788317e"
+vk_api_token = "5d657387b5ddbb3c3f735546ae27d2aac9ddfa50b20a6619c197c803e0fcdefc8608c5c1a6d25ead07a60"
 # Токен пользователя
 user_token = '73c46d213cebd5794a7dfc5471a792bc670b0be4c7452191f25bfdd094b70a78b620994d19e001d883688'
 # Токен приложения

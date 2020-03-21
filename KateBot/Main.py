@@ -75,7 +75,9 @@ class Server:
     # Загрузка фото (Возвращает фото по дате)
     def load_image(self, num_day):
         upload = vk_api.VkUpload(self.vk)
-        photo = upload.photo_messages(f'KateBot/static/images/kate_{num_day}.jpeg')
+        #  test = upload.photo_messages(f"../static/images/kate_{num_day}.jpeg")
+        photo = upload.photo_messages(f"../static/images/kate_{num_day}.jpeg")
+        print("Фото создано")
         owner_id = photo[0]['owner_id']
         photo_id = photo[0]['id']
         access_key = photo[0]['access_key']
