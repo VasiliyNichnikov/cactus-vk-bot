@@ -70,6 +70,7 @@ class Server:
             # Текст, который отправится в сообщение
             text = f'{self.period()}. {self.mini_phrases(num_day)}'
             # Отправка сообщения
+            print('Отправка сообщения:', text)
             self.send_msg(user_peer_id, text, self.load_image(num_day))
 
     # Загрузка фото (Возвращает фото по дате)
