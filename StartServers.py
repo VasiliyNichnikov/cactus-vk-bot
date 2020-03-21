@@ -10,7 +10,7 @@ user_token = '73c46d213cebd5794a7dfc5471a792bc670b0be4c7452191f25bfdd094b70a78b6
 app_token = '3cd9d1bedb7358529b317062d172112e43c81afa025349c82b33382310535f38c79ca58499718324f7ce2'
 
 if __name__ == '__main__':
-    server_kate_bot = Server(vk_api_token, 187407860, 'Kate Bot')
+    server_kate_bot = Server(vk_api_token, app_token, 187407860, 'Kate Bot')
     server_kate_bot.start()
     #  serverBotTeacher = Server(vk_api_token, app_token, 187407860, 'Bot Teacher')
     #  serverCactusDel = Server(vk_api_token, app_token, 187407860, 'Cactus Bot')
