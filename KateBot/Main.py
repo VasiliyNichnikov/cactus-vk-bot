@@ -41,8 +41,6 @@ class Server:
     def send_msg(self, send_id, message, attachment=None):
         self.vk_api.messages.send(peer_id=send_id, message=message, random_id=get_random_id(), attachment=attachment)
 
-    #  loop = asyncio.get_event_loop()
-
     # Запуск сервера
     def start(self):
         for event in self.long_poll.listen():
