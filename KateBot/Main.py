@@ -76,7 +76,7 @@ class Server:
     def load_image(self, num_day):
         upload = vk_api.VkUpload(self.vk)
         #  test = upload.photo_messages(f"../static/images/kate_{num_day}.jpeg")
-        photo = upload.photo_messages(f"../static/images/kate_{num_day}.jpeg")
+        photo = upload.photo_messages(f'KateBot/static/images/kate_{num_day}.jpeg')
         print("Фото создано")
         owner_id = photo[0]['owner_id']
         photo_id = photo[0]['id']
