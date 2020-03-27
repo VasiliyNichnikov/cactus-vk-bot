@@ -2,6 +2,8 @@ import vk_api.vk_api
 from vk_api.bot_longpoll import VkBotLongPoll
 from datetime import timedelta, datetime
 from vk_api.utils import get_random_id
+from pytz import timezone
+import pytz
 import requests
 import asyncio
 import time
@@ -13,19 +15,16 @@ open_door = [332244874, 306255161]
 
 
 class Server:
-    # команды, которые поддерживаются ботом
-    teams = {}
-    # Дата сейчас
-    date_now = datetime.now()
-    # Дата дня рождения
-    date_end = datetime(2020, 4, 14)
+    # Преобразуем аремя
+    utc = pytz.utc
+    moscow = timezone('Europe/Moscow')
 
-    # словарь, который проверяет, отправлял бот или нет уведомление
-    # dict_date_check = {}
+    # Дата сейчас
+    date_now = moscow.localize(datetime.now())
+    # Дата дня рождения
+    date_end = moscow.localize(datetime(2020, 4, 14))
 
     def __init__(self, api_token, app_token, group_id, server_name="None"):
-        test = requests.get('http://carbrain.org/vk_bot/')
-        print(test.text)
         # Имя сервера
         self.server_name = server_name
         # Для Long Poll
@@ -57,15 +56,11 @@ class Server:
     def period(self, day=False):
         period_data = self.date_end - self.date_now
         if not day:
-            return datetime.fromtimestamp(period_data.total_seconds()).strftime("%d, %I:%M:%S")
-        return int(datetime.fromtimestamp(period_data.total_seconds()).strftime("%d"))
+            return period_data
+        return period_data.days
 
     # Отпрака сообщений каждый день
     def send_msg_every_day(self, user_peer_id):
-        num_day = self.period(True)
-        #  if num_day not in self.dict_date_check:
-        # Добавляем в словарь
-        #  self.dict_date_check[num_day] = True
         # Номер дня
         num_day = self.period(True)
         # Текст, который отправится в сообщение
@@ -77,7 +72,6 @@ class Server:
     # Загрузка фото (Возвращает фото по дате)
     def load_image(self, num_day):
         upload = vk_api.VkUpload(self.vk)
-        #  test = upload.photo_messages(f"../static/images/kate_{num_day}.jpeg")
         photo = upload.photo_messages(f'KateBot/static/images/kate_{num_day}.jpeg')
         print("Фото создано")
         owner_id = photo[0]['owner_id']
