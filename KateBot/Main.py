@@ -4,9 +4,8 @@ from datetime import timedelta, datetime
 from vk_api.utils import get_random_id
 from pytz import timezone
 import pytz
-import requests
-import asyncio
 import time
+import threading
 from vk_api.bot_longpoll import VkBotEventType
 
 
@@ -25,16 +24,28 @@ class Server:
     date_end = moscow.localize(datetime(2020, 4, 14))
 
     def __init__(self, api_token, app_token, group_id, server_name="None"):
+        #  resource = requests.get("https://oauth.vk.com/access_token?client_id=7217015&client_secret=dShBjY1jmoVzsrY7s3am&v=5.103&grant_type=client_credentials")
+        #  resource_json = resource.json()
+        #  key_notification = resource_json["access_token"]
         # Имя сервера
         self.server_name = server_name
         # Для Long Poll
         self.vk = vk_api.VkApi(token=api_token)
         # Для работы с приложением
         self.app = vk_api.VkApi(token=app_token)
+        # Для работы с уведомлениями
+        #  self.notification = vk_api.VkApi(token=key_notification)
         # Для использования Long Poll API
         self.long_poll = VkBotLongPoll(self.vk, group_id)
         # Для вызова методов vk_api
         self.vk_api = self.vk.get_api()
+        #  self.vk_notification = self.notification.get_api()
+        # Запуск уведомлений
+
+        for peer_id in open_door:
+            self.start_notification(peer_id)
+
+        print("Бот живой!")
 
     # Отправка сообщений
     def send_msg(self, send_id, message, attachment=None):
@@ -55,8 +66,9 @@ class Server:
     # Вычитает даты
     def period(self, day=False):
         period_data = self.date_end - self.date_now
+        #  print(self.get_date(period_data))
         if not day:
-            return period_data
+            return self.get_date(period_data)
         return period_data.days
 
     # Отпрака сообщений каждый день
@@ -64,7 +76,7 @@ class Server:
         # Номер дня
         num_day = self.period(True)
         # Текст, который отправится в сообщение
-        text = f'{self.period()}. {self.mini_phrases(num_day)}'
+        text = f'{self.period()}; {self.mini_phrases(num_day)}'
         # Отправка сообщения
         print('Отправка сообщения:', text)
         self.send_msg(user_peer_id, text, self.load_image(num_day))
@@ -91,8 +103,39 @@ class Server:
         5: '5 дней. Готовь торт, шарики, свечи, праздник вышел! А я пойду спать, но это не точно)))'
     }
 
+    def start_notification(self, peer_id):
+        notification = threading.Thread(target=self.notification, name="Notification",
+                                        args=(peer_id,), daemon=True)
+        notification.start()
+
     # Мини фразы, которые отправляются каждый 5 день
     def mini_phrases(self, num_day):
         if num_day in self.dict_mini_phrases:
             return self.dict_mini_phrases[num_day]
         return ""
+
+    # Возвращает информацию, сколько дней, часов и минут осталось до дня рождения
+    def get_date(self, date):
+        res_date = str(date).split()
+        day = res_date[0]
+        _time = res_date[-1].split(':')
+        hours = _time[0]
+        minutes = _time[1]
+        seconds = _time[-1].split('.')[0]
+
+        res_line = f"{day} дней; {hours}:{minutes}:{seconds}"
+        return res_line
+
+    # Словарь уведомлений, в данном методе будет храниться информация о том, отправлено фото или нет
+    dict_notification = {}
+
+    # Уведомление, они будут приходить в новый день
+    def notification(self, peer_id):
+        while True:
+            day = self.period(True)
+            key = f"{day}_{peer_id}"
+            if key not in self.dict_notification:
+                self.dict_notification[key] = True
+                #  self.send_msg(peer_id, "ПРИВЕТ!")
+                self.send_msg_every_day(peer_id)
+

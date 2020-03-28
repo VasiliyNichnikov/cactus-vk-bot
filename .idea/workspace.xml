@@ -4,6 +4,7 @@
     <list default="true" id="1a78ce58-d61a-4b01-8c34-4615c52f3886" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KateBot/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/KateBot/Main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StartServers.py" beforeDir="false" afterPath="$PROJECT_DIR$/StartServers.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,7 +198,9 @@
       <workItem from="1584824885868" duration="1382000" />
       <workItem from="1584863488847" duration="39000" />
       <workItem from="1585245074046" duration="861000" />
-      <workItem from="1585280221769" duration="1551000" />
+      <workItem from="1585280221769" duration="3722000" />
+      <workItem from="1585375572541" duration="609000" />
+      <workItem from="1585378244238" duration="4467000" />
     </task>
     <task id="LOCAL-00001" summary="Ready One">
       <created>1575151266601</created>
@@ -395,7 +398,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584826078487</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Fixed bugs">
+      <created>1585281981739</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1585281981739</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -423,33 +433,34 @@
     <MESSAGE value="Sending messages to individual users" />
     <MESSAGE value="Sending messages to individual users (1)" />
     <MESSAGE value="Sending messages to individual users (2)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sending messages to individual users (2)" />
+    <MESSAGE value="Fixed bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed bugs" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="934" y="134" key="CommitChangelistDialog2" timestamp="1584826077466">
+    <state x="934" y="134" key="CommitChangelistDialog2" timestamp="1585281980635">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state x="934" y="134" key="CommitChangelistDialog2/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1584826077466" />
+    <state x="934" y="134" key="CommitChangelistDialog2/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1585281980635" />
     <state x="1060" y="294" key="FileChooserDialogImpl" timestamp="1584863528398">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state x="1060" y="294" key="FileChooserDialogImpl/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1584863528398" />
-    <state width="2517" height="295" key="GridCell.Tab.0.bottom" timestamp="1585281903651">
+    <state width="2517" height="295" key="GridCell.Tab.0.bottom" timestamp="1585389494446">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state width="2517" height="295" key="GridCell.Tab.0.bottom/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1585281903651" />
-    <state width="2517" height="295" key="GridCell.Tab.0.center" timestamp="1585281903651">
+    <state width="2517" height="295" key="GridCell.Tab.0.bottom/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1585389494446" />
+    <state width="2517" height="295" key="GridCell.Tab.0.center" timestamp="1585389494446">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state width="2517" height="295" key="GridCell.Tab.0.center/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1585281903651" />
-    <state width="2517" height="295" key="GridCell.Tab.0.left" timestamp="1585281903651">
+    <state width="2517" height="295" key="GridCell.Tab.0.center/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1585389494446" />
+    <state width="2517" height="295" key="GridCell.Tab.0.left" timestamp="1585389494446">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state width="2517" height="295" key="GridCell.Tab.0.left/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1585281903651" />
-    <state width="2517" height="295" key="GridCell.Tab.0.right" timestamp="1585281903651">
+    <state width="2517" height="295" key="GridCell.Tab.0.left/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1585389494446" />
+    <state width="2517" height="295" key="GridCell.Tab.0.right" timestamp="1585389494446">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state width="2517" height="295" key="GridCell.Tab.0.right/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1585281903651" />
+    <state width="2517" height="295" key="GridCell.Tab.0.right/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1585389494446" />
     <state width="2517" height="363" key="GridCell.Tab.1.bottom" timestamp="1584826270554">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
@@ -466,18 +477,18 @@
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state width="2517" height="363" key="GridCell.Tab.1.right/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1584826270554" />
-    <state x="781" y="182" key="SettingsEditor" timestamp="1584721647925">
+    <state x="781" y="182" key="SettingsEditor" timestamp="1585378433462">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state x="781" y="182" key="SettingsEditor/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1584721647925" />
-    <state x="872" y="273" key="Vcs.Push.Dialog.v2" timestamp="1584826086856">
+    <state x="781" y="182" key="SettingsEditor/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1585378433462" />
+    <state x="872" y="273" key="Vcs.Push.Dialog.v2" timestamp="1585282017689">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state x="872" y="273" key="Vcs.Push.Dialog.v2/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1584826086856" />
-    <state x="976" y="363" key="com.intellij.ide.util.TipDialog" timestamp="1585280232710">
+    <state x="872" y="273" key="Vcs.Push.Dialog.v2/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1585282017689" />
+    <state x="976" y="363" key="com.intellij.ide.util.TipDialog" timestamp="1585375580494">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state x="976" y="363" key="com.intellij.ide.util.TipDialog/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1585280232710" />
+    <state x="976" y="363" key="com.intellij.ide.util.TipDialog/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1585375580494" />
     <state x="943" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1579950183443">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
@@ -495,7 +506,6 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/cactus_vk_bot$Main__1_.coverage" NAME="Main (1) Coverage Results" MODIFIED="1585245302738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/KateBot" />
-    <SUITE FILE_PATH="coverage/cactus_vk_bot$StartServers.coverage" NAME="StartServers Coverage Results" MODIFIED="1585281903646" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cactus_vk_bot$StartServers.coverage" NAME="StartServers Coverage Results" MODIFIED="1585389494442" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
