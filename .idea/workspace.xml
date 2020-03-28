@@ -2,17 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a78ce58-d61a-4b01-8c34-4615c52f3886" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/KateBot/data/__all_models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/KateBot/data/db_session.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/KateBot/data/user.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KateBot/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/KateBot/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StartServers.py" beforeDir="false" afterPath="$PROJECT_DIR$/StartServers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -203,7 +213,7 @@
       <workItem from="1585245074046" duration="861000" />
       <workItem from="1585280221769" duration="3722000" />
       <workItem from="1585375572541" duration="609000" />
-      <workItem from="1585378244238" duration="5857000" />
+      <workItem from="1585378244238" duration="6226000" />
     </task>
     <task id="LOCAL-00001" summary="Ready One">
       <created>1575151266601</created>
@@ -415,7 +425,21 @@
       <option name="project" value="LOCAL" />
       <updated>1585389599253</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="A bot with a database of users and information to whom it sent the photo, and to whom it did not.">
+      <created>1585390903749</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1585390903749</updated>
+    </task>
+    <task id="LOCAL-00032" summary="A bot with a database of users and information to whom it sent the photo, and to whom it did not.">
+      <created>1585391066222</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1585391066222</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -445,17 +469,18 @@
     <MESSAGE value="Sending messages to individual users (2)" />
     <MESSAGE value="Fixed bugs" />
     <MESSAGE value="Almost ready bot." />
-    <option name="LAST_COMMIT_MESSAGE" value="Almost ready bot." />
+    <MESSAGE value="A bot with a database of users and information to whom it sent the photo, and to whom it did not." />
+    <option name="LAST_COMMIT_MESSAGE" value="A bot with a database of users and information to whom it sent the photo, and to whom it did not." />
   </component>
   <component name="WindowStateProjectService">
     <state x="1010" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585390158329">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state x="1010" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1585390158329" />
-    <state x="934" y="134" key="CommitChangelistDialog2" timestamp="1585390902782">
+    <state x="934" y="134" key="CommitChangelistDialog2" timestamp="1585391065596">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state x="934" y="134" key="CommitChangelistDialog2/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1585390902782" />
+    <state x="934" y="134" key="CommitChangelistDialog2/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1585391065596" />
     <state x="1060" y="294" key="FileChooserDialogImpl" timestamp="1584863528398">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
@@ -492,14 +517,14 @@
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state width="2517" height="363" key="GridCell.Tab.1.right/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1584826270554" />
-    <state x="781" y="182" key="SettingsEditor" timestamp="1585389838659">
+    <state x="1153" y="188" key="SettingsEditor" timestamp="1585391292195">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state x="781" y="182" key="SettingsEditor/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1585389838659" />
-    <state x="872" y="273" key="Vcs.Push.Dialog.v2" timestamp="1585390966429">
+    <state x="1153" y="188" key="SettingsEditor/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1585391292195" />
+    <state x="872" y="273" key="Vcs.Push.Dialog.v2" timestamp="1585391078589">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state x="872" y="273" key="Vcs.Push.Dialog.v2/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1585390966429" />
+    <state x="872" y="273" key="Vcs.Push.Dialog.v2/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1585391078589" />
     <state x="976" y="363" key="com.intellij.ide.util.TipDialog" timestamp="1585375580494">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
