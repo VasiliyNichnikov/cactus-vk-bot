@@ -6,6 +6,7 @@ from pytz import timezone
 import pytz
 import time
 import threading
+from KateBot.data.user import User
 from vk_api.bot_longpoll import VkBotEventType
 
 
@@ -23,10 +24,7 @@ class Server:
     # Дата дня рождения
     date_end = moscow.localize(datetime(2020, 4, 14))
 
-    def __init__(self, api_token, app_token, group_id, server_name="None"):
-        #  resource = requests.get("https://oauth.vk.com/access_token?client_id=7217015&client_secret=dShBjY1jmoVzsrY7s3am&v=5.103&grant_type=client_credentials")
-        #  resource_json = resource.json()
-        #  key_notification = resource_json["access_token"]
+    def __init__(self, api_token, app_token, group_id, db_session, server_name="None"):
         # Имя сервера
         self.server_name = server_name
         # Для Long Poll
@@ -39,6 +37,9 @@ class Server:
         self.long_poll = VkBotLongPoll(self.vk, group_id)
         # Для вызова методов vk_api
         self.vk_api = self.vk.get_api()
+        # Хранит БД
+        self.db_session = db_session
+
         #  self.vk_notification = self.notification.get_api()
         # Запуск уведомлений
 
@@ -103,6 +104,7 @@ class Server:
         5: '5 дней. Готовь торт, шарики, свечи, праздник вышел! А я пойду спать, но это не точно)))'
     }
 
+    # Запускает уведомления
     def start_notification(self, peer_id):
         notification = threading.Thread(target=self.notification, name="Notification",
                                         args=(peer_id,), daemon=True)
@@ -126,16 +128,21 @@ class Server:
         res_line = f"{day} дней; {hours}:{minutes}:{seconds}"
         return res_line
 
-    # Словарь уведомлений, в данном методе будет храниться информация о том, отправлено фото или нет
-    dict_notification = {}
-
     # Уведомление, они будут приходить в новый день
     def notification(self, peer_id):
+        session = self.db_session.create_session()
         while True:
             day = self.period(True)
             key = f"{day}_{peer_id}"
-            if key not in self.dict_notification:
-                self.dict_notification[key] = True
-                #  self.send_msg(peer_id, "ПРИВЕТ!")
+            user = session.query(User).filter(User.id_vk == key).first()
+            if not user:
+                # Добавление в БД
+                print("Новый день!")
+                new_day = User()
+                new_day.id_vk = key
+                new_day.condition_photo = True
+                session.add(new_day)
+                session.commit()
+                # Отправка фото
                 self.send_msg_every_day(peer_id)
 
