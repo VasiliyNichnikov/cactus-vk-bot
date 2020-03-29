@@ -19,8 +19,6 @@ class Server:
     utc = pytz.utc
     moscow = timezone('Europe/Moscow')
 
-    # Дата сейчас
-    date_now = moscow.localize(datetime.now())
     # Дата дня рождения
     date_end = moscow.localize(datetime(2020, 4, 14))
 
@@ -66,7 +64,10 @@ class Server:
 
     # Вычитает даты
     def period(self, day=False):
-        period_data = self.date_end - self.date_now
+        # Дата сейчас
+        date_now = self.moscow.localize(datetime.now())
+        period_data = self.date_end - date_now
+
         #  print(self.get_date(period_data))
         if not day:
             return self.get_date(period_data)
