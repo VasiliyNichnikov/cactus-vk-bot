@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a78ce58-d61a-4b01-8c34-4615c52f3886" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/KateBot/static/audios/ten_days/days_left_10.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/KateBot/static/audios/ten_days/days_left_2.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/KateBot/static/audios/ten_days/days_left_4.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/KateBot/static/audios/ten_days/days_left_6.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/KateBot/static/audios/ten_days/days_left_8.mp3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KateBot/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/KateBot/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KateBot/static/audios/test_2.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KateBot/static/audios/test_audio.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KateBot/static/ready_image.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/KateBot/static/ready_image.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KateBot/work_image.py" beforeDir="false" afterPath="$PROJECT_DIR$/KateBot/work_image.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StartServers.py" beforeDir="false" afterPath="$PROJECT_DIR$/StartServers.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -241,7 +230,7 @@
       <workItem from="1585650783564" duration="11810000" />
       <workItem from="1585757798682" duration="820000" />
       <workItem from="1585814078211" duration="1828000" />
-      <workItem from="1585823714044" duration="7207000" />
+      <workItem from="1585823714044" duration="7433000" />
     </task>
     <task id="LOCAL-00001" summary="Ready One">
       <created>1575151266601</created>
@@ -488,7 +477,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585665635351</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="almost finished app">
+      <created>1585832047193</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1585832047193</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -521,7 +517,8 @@
     <MESSAGE value="Almost ready bot." />
     <MESSAGE value="A bot with a database of users and information to whom it sent the photo, and to whom it did not." />
     <MESSAGE value="Sending with text on an image" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sending with text on an image" />
+    <MESSAGE value="almost finished app" />
+    <option name="LAST_COMMIT_MESSAGE" value="almost finished app" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1042" y="343" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585827371624">
@@ -532,10 +529,10 @@
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state x="1010" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1585390158329" />
-    <state x="934" y="134" key="CommitChangelistDialog2" timestamp="1585665632248">
+    <state x="934" y="134" key="CommitChangelistDialog2" timestamp="1585832045537">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state x="934" y="134" key="CommitChangelistDialog2/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1585665632248" />
+    <state x="934" y="134" key="CommitChangelistDialog2/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1585832045537" />
     <state x="1060" y="294" key="FileChooserDialogImpl" timestamp="1585665739862">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
@@ -576,10 +573,10 @@
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state x="1153" y="188" key="SettingsEditor/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1585655072908" />
-    <state x="872" y="273" key="Vcs.Push.Dialog.v2" timestamp="1585476207719">
+    <state x="872" y="273" key="Vcs.Push.Dialog.v2" timestamp="1585832063102">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state x="872" y="273" key="Vcs.Push.Dialog.v2/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1585476207719" />
+    <state x="872" y="273" key="Vcs.Push.Dialog.v2/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1585832063102" />
     <state x="976" y="363" key="com.intellij.ide.util.TipDialog" timestamp="1585823713246">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>

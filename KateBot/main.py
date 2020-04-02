@@ -46,8 +46,8 @@ class Server:
         self.group_id = group_id
 
         # Запуск уведомлений
-        #  for peer_id in open_door:
-        #    self.start_notification(peer_id)
+        for peer_id in open_door:
+            self.start_notification(peer_id)
         print("Бот живой!")
 
     # Отправка сообщений
