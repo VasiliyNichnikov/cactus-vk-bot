@@ -1,6 +1,6 @@
 import vk_api.vk_api
 from vk_api.bot_longpoll import VkBotLongPoll
-from datetime import timedelta, datetime
+from datetime import datetime
 from vk_api.utils import get_random_id
 from pytz import timezone
 import pytz
@@ -19,11 +19,12 @@ open_door = [332244874, 306255161]
 
 class Server:
     # Преобразуем аремя
-    utc = pytz.utc
-    moscow = timezone('Europe/Moscow')
+    #  utc = pytz.utc
+    #  moscow = timezone('Europe/Moscow')
 
     # Дата дня рождения
-    date_end = moscow.localize(datetime(2020, 4, 14))
+    #  date_end = moscow.localize(datetime(2020, 4, 14))
+    date_end = datetime(2020, 4, 14)
 
     def __init__(self, api_token, app_token, group_id, db_session, server_name="None"):
         # Имя сервера
