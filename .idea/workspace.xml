@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a78ce58-d61a-4b01-8c34-4615c52f3886" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -230,7 +230,7 @@
       <workItem from="1585650783564" duration="11810000" />
       <workItem from="1585757798682" duration="820000" />
       <workItem from="1585814078211" duration="1828000" />
-      <workItem from="1585823714044" duration="7433000" />
+      <workItem from="1585823714044" duration="7682000" />
     </task>
     <task id="LOCAL-00001" summary="Ready One">
       <created>1575151266601</created>
@@ -484,7 +484,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585832047193</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="almost finished app">
+      <created>1585832285016</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1585832285017</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -529,10 +536,10 @@
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state x="1010" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1585390158329" />
-    <state x="934" y="134" key="CommitChangelistDialog2" timestamp="1585832045537">
+    <state x="934" y="134" key="CommitChangelistDialog2" timestamp="1585832284318">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state x="934" y="134" key="CommitChangelistDialog2/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1585832045537" />
+    <state x="934" y="134" key="CommitChangelistDialog2/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1585832284318" />
     <state x="1060" y="294" key="FileChooserDialogImpl" timestamp="1585665739862">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
@@ -569,10 +576,10 @@
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state width="2517" height="363" key="GridCell.Tab.1.right/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1585827025247" />
-    <state x="1153" y="188" key="SettingsEditor" timestamp="1585655072908">
+    <state x="1153" y="188" key="SettingsEditor" timestamp="1585832369579">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state x="1153" y="188" key="SettingsEditor/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1585655072908" />
+    <state x="1153" y="188" key="SettingsEditor/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1585832369579" />
     <state x="872" y="273" key="Vcs.Push.Dialog.v2" timestamp="1585832063102">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
