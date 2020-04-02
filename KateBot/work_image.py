@@ -13,9 +13,6 @@ class TransformationImage:
 
     def add_panel_text(self, text):
         draw = ImageDraw.Draw(self.image, "RGBA")
-
-        print(self.width_image, self.height_image)
-
         draw.polygon([(0, self.height_image / 2), (0, self.height_image / 2 + self.height_block),
                       (self.width_image, self.height_image / 2 + self.height_block),
                       (self.width_image, self.height_image / 2)],  fill=(255, 170, 228, 120))
@@ -25,11 +22,3 @@ class TransformationImage:
         draw.text((self.width_image / 2 - size[0] / 2, (self.height_image / 2 - 13) + size[1] / 2),
                   text=text, fill="white", font=font)
         self.image.save("KateBot/static/ready_image.jpeg")
-        self.image.show()
-        #  return Image.register_decoder()
-
-
-
-
-#  test = ChangeImage("static/images/kate_10.jpeg")
-#  test.add_panel_text()

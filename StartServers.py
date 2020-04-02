@@ -8,13 +8,12 @@ vk_api_token = "5d657387b5ddbb3c3f735546ae27d2aac9ddfa50b20a6619c197c803e0fcdefc
 # Токен пользователя
 user_token = '73c46d213cebd5794a7dfc5471a792bc670b0be4c7452191f25bfdd094b70a78b620994d19e001d883688'
 # Токен приложения
-app_token = '3cd9d1bedb7358529b317062d172112e43c81afa025349c82b33382310535f38c79ca58499718324f7ce2'
-app_token_2 = "c71323c4dc0d9cc96b3f6e73e9fc7d9c81e00618941d767536d593dedbf19df52fb8333b3408d8c6de075"
+app_token = "d20982366e78b639274c82289794f835b5ac469e8001e2c7e5667e5ed673d1262d6582a983f1fd99b49e5"
 
 
 if __name__ == '__main__':
     db_session.global_init("KateBot/db/users.sqlite")
-    server_kate_bot = Server(vk_api_token, app_token_2, 187407860,  db_session, 'Kate Bot')
+    server_kate_bot = Server(vk_api_token, app_token, 187407860,  db_session, 'Kate Bot')
     server_kate_bot.start()
     #  serverBotTeacher = Server(vk_api_token, app_token, 187407860, 'Bot Teacher')
     #  serverCactusDel = Server(vk_api_token, app_token, 187407860, 'Cactus Bot')

@@ -5,6 +5,7 @@ from vk_api.utils import get_random_id
 from pytz import timezone
 import pytz
 import time
+import os.path
 import requests
 import threading
 from KateBot.data.user import User
@@ -63,15 +64,16 @@ class Server:
                 if peer_id in open_door and user_message == 'фото':
                     print('Отправка фото и не только')
                     self.send_msg_every_day(peer_id)
-                elif peer_id in open_door and user_message == 'тест':
-                    print('Отправка аудио')
-                    self.load_audio(1, peer_id)
+                #  elif peer_id in open_door and user_message == 'тест':
+                #    print('Отправка аудио')
+                #    self.load_audio(1, peer_id)
                     #self.send_msg(send_id=peer_id, message="", attachment=self.load_audio(1, peer_id))
 
     # Вычитает даты
     def period(self, day=False):
         # Дата сейчас
-        date_now = self.moscow.localize(datetime.now())
+        #  date_now = self.moscow.localize(datetime.now())
+        date_now = datetime.now()
         period_data = self.date_end - date_now
 
         #  print(self.get_date(period_data))
@@ -87,7 +89,9 @@ class Server:
         text = self.mini_phrases(num_day)
         # Отправка сообщения
         #  print('Отправка сообщения:', text)
-        self.send_msg(user_peer_id, text, self.load_image(num_day))
+        if text is not False or self.check_audio(num_day) is not False:
+            self.send_msg(user_peer_id, text, self.load_audio(num_day))
+        self.send_msg(user_peer_id, "", self.load_image(num_day))
 
     # Загрузка фото (Возвращает фото по дате)
     def load_image(self, num_day):
@@ -108,20 +112,30 @@ class Server:
         return attachment
 
     # Загрузка аудио файла (Возвращает аудио по дате)
-    def load_audio(self, num_day, peer_id):
+    def load_audio(self, num_day):
+        # Путь к файлу
+        path = f"KateBot/static/audios/ten_days/days_left_{num_day}.mp3"
         # Открываем файл аудио
-        audio_file = open("KateBot/static/audios/test_audio.mp3", "rb")
+        audio_file = open(path, "rb")
         # Получение URL куда загружать аудио
         url = self.vk_app.audio.getUploadServer()
         # Загрузка аудио файла на сервер
         load_url = requests.post(url["upload_url"], files={"file": audio_file}).json()
         # Сохранение аудио файла
         audio_save = self.vk_app.audio.save(server=load_url["server"], audio=load_url["audio"],
-                                            hash=load_url['hash'], artist='Я', title='ТЕСТ')
+                                            hash=load_url['hash'], artist="Cactus Bot", title="NotBdayBot")
         # Готовая строка для отправки в сообщения
         attachment = f"audio{audio_save['owner_id']}_{audio_save['id']}"
         print("Аудио создано")
         return attachment
+
+    # Проверяет, есть ли аудио файл
+    def check_audio(self, num_day):
+        path = f"KateBot/static/audios/ten_days/days_left_{num_day}.mp3"
+        file = os.path.exists(path)
+        if file:
+            return True
+        return False
 
     # Словарь с мини фразами
     dict_mini_phrases = {
@@ -139,7 +153,7 @@ class Server:
         4: '4 ДНЯ. Ты прекрасно выглядишь!(ВСЕГДА)',
         3: 'БОГ ЛЮБИТ ТРОЕЦУ (И ТРОИЦКОЮ), ТРИ МЕСЯЦА ВО ВРЕМЕНИ ГОДА, ТРИ ДНЯ!)',
         2: '2 ДНЯ. Торт готов?',
-        1: '1 ДЕНЬ.)',
+        1: '1 ДЕНЬ. Помнишь, я говорил, что люблю дни рождения? Тебя я люблю больше)',
         0: 'ССЫЛКА НА ВИДЕО'
     }
 
@@ -153,7 +167,7 @@ class Server:
     def mini_phrases(self, num_day):
         if num_day in self.dict_mini_phrases:
             return self.dict_mini_phrases[num_day]
-        return ""
+        return False
 
     # Возвращает информацию, сколько дней, часов и минут осталось до дня рождения
     def get_date(self, date):
