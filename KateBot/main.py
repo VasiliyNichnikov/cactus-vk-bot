@@ -2,13 +2,10 @@ import vk_api.vk_api
 from vk_api.bot_longpoll import VkBotLongPoll
 from datetime import datetime
 from vk_api.utils import get_random_id
-from pytz import timezone
-import pytz
-import time
 import os.path
 import requests
 import threading
-from KateBot.data.user import User
+from KateBot.work_bd import WorkBD
 from vk_api.bot_longpoll import VkBotEventType
 from KateBot.work_image import TransformationImage
 
@@ -26,7 +23,7 @@ class Server:
     #  date_end = moscow.localize(datetime(2020, 4, 14))
     date_end = datetime(2020, 4, 14)
 
-    def __init__(self, api_token, app_token, group_id, db_session, server_name="None"):
+    def __init__(self, api_token, app_token, group_id, server_name="None"):
         # Имя сервера
         self.server_name = server_name
         # Для Long Poll
@@ -41,8 +38,6 @@ class Server:
         self.vk_api = self.vk.get_api()
         # Для работы с функциями приложения
         self.vk_app = self.app.get_api()
-        # Хранит БД
-        self.db_session = db_session
         # id группы
         self.group_id = group_id
 
@@ -65,19 +60,12 @@ class Server:
                 if peer_id in open_door and user_message == 'фото':
                     print('Отправка фото и не только')
                     self.send_msg_every_day(peer_id)
-                #  elif peer_id in open_door and user_message == 'тест':
-                #    print('Отправка аудио')
-                #    self.load_audio(1, peer_id)
-                    #self.send_msg(send_id=peer_id, message="", attachment=self.load_audio(1, peer_id))
 
     # Вычитает даты
     def period(self, day=False):
         # Дата сейчас
-        #  date_now = self.moscow.localize(datetime.now())
         date_now = datetime.now()
         period_data = self.date_end - date_now
-
-        #  print(self.get_date(period_data))
         if not day:
             return self.get_date(period_data)
         return period_data.days
@@ -184,19 +172,14 @@ class Server:
 
     # Уведомление, они будут приходить в новый день
     def notification(self, peer_id):
-        session = self.db_session.create_session()
         while True:
             day = self.period(True)
             key = f"{day}_{peer_id}"
-            user = session.query(User).filter(User.id_vk == key).first()
-            if not user:
-                # Добавление в БД
-                print("Новый день!")
-                new_day = User()
-                new_day.id_vk = key
-                new_day.condition_photo = True
-                session.add(new_day)
-                session.commit()
+            name = self.vk_api.users.get(user_ids=[peer_id])[0]['first_name']
+            bd = WorkBD()
+            if bd.check_send_notification(key):
+                print("Отправка фото")
+                bd.add_info_user_bd(key, name, True)
                 # Отправка фото
                 self.send_msg_every_day(peer_id)
 

@@ -1,6 +1,5 @@
 #  from Bot.BotCactus import Server
 #  from CactusDel.MainScript import Server
-from KateBot.data import db_session
 from KateBot.main import Server
 
 # токен вк api
@@ -12,8 +11,7 @@ app_token = "d20982366e78b639274c82289794f835b5ac469e8001e2c7e5667e5ed673d1262d6
 
 
 if __name__ == '__main__':
-    db_session.global_init("KateBot/db/users.sqlite")
-    server_kate_bot = Server(vk_api_token, app_token, 187407860,  db_session, 'Kate Bot')
+    server_kate_bot = Server(vk_api_token, app_token, 187407860, 'Kate Bot')
     server_kate_bot.start()
     #  serverBotTeacher = Server(vk_api_token, app_token, 187407860, 'Bot Teacher')
     #  serverCactusDel = Server(vk_api_token, app_token, 187407860, 'Cactus Bot')
