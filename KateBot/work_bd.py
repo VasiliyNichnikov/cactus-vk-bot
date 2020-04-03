@@ -55,8 +55,3 @@ class WorkBD:
             if user_id_bd == user_id and notification_send_bd:
                 return False
         return True
-
-
-db = WorkBD()
-#  db.add_info_user_bd('dfdfsd_dfd', 'vasa', False)
-print(db.check_send_notification('dfdfsd_dfd'))
