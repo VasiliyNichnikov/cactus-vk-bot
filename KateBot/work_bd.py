@@ -27,6 +27,7 @@ class WorkBD:
     def add_info_user_bd(self, user_id, name, notification_send):
         print(user_id, name, notification_send)
         sql = '''INSERT INTO USERS(USER_ID, NAME, NOTIFICATION_SEND) VALUES (%s, %s, %s);'''
+        print(self.cursor)
         self.cursor.execute(sql, (user_id, name, notification_send))
         print("User добавлен в таблицу")
         self.connection.commit()
@@ -52,7 +53,10 @@ class WorkBD:
             user_id_bd = i[0]
             notification_send_bd = i[-1]
             if user_id_bd == user_id and notification_send_bd:
-                self.connection.close()
                 return False
-        self.connection.close()
         return True
+
+
+db = WorkBD()
+#  db.add_info_user_bd('dfdfsd_dfd', 'vasa', False)
+print(db.check_send_notification('dfdfsd_dfd'))
