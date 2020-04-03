@@ -17,7 +17,7 @@ class WorkBD:
 
     # Создание таблицы для хранения пользователей
     def create_table_bd(self):
-        self.cursor.execute('''CREATE TABLE USERS (USER_ID INT PRIMARY KEY NOT NULL, NAME TEXT NOT NULL, 
+        self.cursor.execute('''CREATE TABLE USERS (USER_ID TEXT PRIMARY KEY NOT NULL, NAME TEXT NOT NULL, 
         NOTIFICATION_SEND BOOL DEFAULT FALSE)''')
         print("Таблица создана")
         self.connection.commit()
@@ -25,6 +25,7 @@ class WorkBD:
 
     # Добавление информации о пользователе в БД
     def add_info_user_bd(self, user_id, name, notification_send):
+        print(user_id, name, notification_send)
         sql = '''INSERT INTO USERS(USER_ID, NAME, NOTIFICATION_SEND) VALUES (%s, %s, %s);'''
         self.cursor.execute(sql, (user_id, name, notification_send))
         print("User добавлен в таблицу")
