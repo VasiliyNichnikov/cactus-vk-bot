@@ -6,10 +6,10 @@ class WorkBD:
     def __init__(self):
         self.connection = None
         self.connection = psycopg2.connect(
-            database="dckdmspjfi40au",
-            user="cozvlczrmakcgy",
-            password="7efb344b3b78fc7eb389f8570bd0edfbb9d4a607c586232e2c03940f0d10ed29",
-            host="ec2-18-235-20-228.compute-1.amazonaws.com",
+            database="da7jf64t7k39md",
+            user="tabuknomivnqmy",
+            password="a8831b83d310061f306cbaa4d3c14ebf77d2344795e6b22d1176dea370d59a28",
+            host="ec2-23-22-156-110.compute-1.amazonaws.com",
             port="5432"
         )
         self.cursor = self.connection.cursor()
