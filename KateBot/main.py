@@ -179,7 +179,7 @@ class Server:
             bd = WorkBD()
             if bd.check_send_notification(key):
                 print("Отправка фото")
-                #  bd.add_info_user_bd(key, name, True)
+                bd.add_info_user_bd(key, name, True)
                 # Отправка фото
                 self.send_msg_every_day(peer_id)
 
