@@ -78,9 +78,9 @@ class Server:
         text = self.mini_phrases(num_day)
         # Отправка сообщения
         #  print('Отправка сообщения:', text)
-        if text is not False or self.check_audio(num_day) is not False:
-            self.send_msg(user_peer_id, text, self.load_audio(num_day))
-        self.send_msg(user_peer_id, "", self.load_image(num_day))
+        if self.check_audio(num_day) is not False:
+            self.send_msg(user_peer_id, "", self.load_audio(num_day))
+        self.send_msg(user_peer_id, text, self.load_image(num_day))
 
     # Загрузка фото (Возвращает фото по дате)
     def load_image(self, num_day):
@@ -134,7 +134,7 @@ class Server:
         15: 'Если проблему можно разрешить, не стоит о ней беспокоиться. '
             'Если проблема неразрешима, беспокоиться о ней бессмысленно.',
         10: '10 ДНЕЙ. УРА. СОВСЕМ СКОРО БУДЕТ ПРАЗДНИК!!!!!',
-        9: '9 ДНЕЙ. Привет милый сурок. Я скучаю!',
+        9: '9 ДНЕЙ. Привет милый сурок. Я скучаю!)',
         8: '8 ДНЕЙ. Осталось совсем немного!',
         7: '7 ДНЕЙ. Что делаешь, как дела, как настроение? Праздник близок!',
         6: '6 ДНЕЙ. Любишь день рождения? Я да)',
@@ -179,7 +179,7 @@ class Server:
             bd = WorkBD()
             if bd.check_send_notification(key):
                 print("Отправка фото")
-                bd.add_info_user_bd(key, name, True)
+                #  bd.add_info_user_bd(key, name, True)
                 # Отправка фото
                 self.send_msg_every_day(peer_id)
 

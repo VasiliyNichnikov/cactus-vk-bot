@@ -48,7 +48,7 @@ class WorkBD:
     def check_send_notification(self, user_id):
         self.cursor.execute("SELECT USER_ID, NAME, NOTIFICATION_SEND from USERS")
         users = self.cursor.fetchall()
-        print('Проверка завершена')
+        #  print('Проверка завершена')
         for i in users:
             user_id_bd = i[0]
             notification_send_bd = i[-1]
