@@ -130,7 +130,7 @@ class Server:
 
     # Проверяет, есть ли аудио файл
     def check_audio(self, num_day):
-        path = f"KateBot/static/images/kate_{num_day}.jpeg"
+        path = f"KateBot/static/audios/ten_days/days_left_{num_day}.mp3"
         file = os.path.exists(path)
         if file:
             return True
@@ -139,7 +139,7 @@ class Server:
         # Проверяет, есть ли аудио файл
 
     def check_image(self, num_day):
-        path = f"KateBot/static/audios/ten_days/days_left_{num_day}.mp3"
+        path = f"KateBot/static/images/kate_{num_day}.jpeg"
         file = os.path.exists(path)
         if file:
             return True
