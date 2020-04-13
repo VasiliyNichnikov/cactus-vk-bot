@@ -41,6 +41,9 @@ class Server:
         # id группы
         self.group_id = group_id
 
+        bd = WorkBD()
+        # bd.delete_user_bd()
+        # bd.get_info_user_bd()
         # Запуск уведомлений
         for peer_id in open_door:
             self.start_notification(peer_id)
@@ -53,13 +56,12 @@ class Server:
     # Запуск сервера
     def start(self):
         for event in self.long_poll.listen():
-            print(event)
             if event.type == VkBotEventType.MESSAGE_NEW:
                 # Сообщение пользователя
                 user_message = str(event.object.message['text']).lower()
                 peer_id = int(event.object.message['from_id'])
                 if peer_id in open_door and user_message == 'фото':
-                    print('Отправка фото и не только')
+                    print('Отправка сообщения')
                     self.send_msg_every_day(peer_id)
 
     # Вычитает даты
@@ -75,13 +77,20 @@ class Server:
     def send_msg_every_day(self, user_peer_id):
         # Номер дня
         num_day = self.period(True)
-        # Текст, который отправится в сообщение, отправка мини-фраз
-        text = self.mini_phrases(num_day)
-        # Отправка сообщения
-        #  print('Отправка сообщения:', text)
-        if self.check_audio(num_day) is not False:
-            self.send_msg(user_peer_id, "", self.load_audio(num_day))
-        self.send_msg(user_peer_id, text, self.load_image(num_day))
+        if num_day >= 0:
+            # Текст, который отправится в сообщение, отправка мини-фраз
+            text = self.mini_phrases(num_day)
+            # Отправка сообщения
+            #  print('Отправка сообщения:', text)
+            if self.check_audio(num_day) is not False:
+                self.send_msg(user_peer_id, "", self.load_audio(num_day))
+            if self.check_image(num_day) is not False:
+                self.send_msg(user_peer_id, text, self.load_image(num_day))
+        elif num_day == -1:
+            self.send_msg(user_peer_id, "Поздравляю тебя с днем рождения, любиый Сурок! "
+                                        "https://yadi.sk/i/fMi-JbYaCFkM7A")
+        else:
+            self.send_msg(user_peer_id, "Как прошел день рождение?)")
 
     # Загрузка фото (Возвращает фото по дате)
     def load_image(self, num_day):
@@ -121,6 +130,15 @@ class Server:
 
     # Проверяет, есть ли аудио файл
     def check_audio(self, num_day):
+        path = f"KateBot/static/images/kate_{num_day}.jpeg"
+        file = os.path.exists(path)
+        if file:
+            return True
+        return False
+
+        # Проверяет, есть ли аудио файл
+
+    def check_image(self, num_day):
         path = f"KateBot/static/audios/ten_days/days_left_{num_day}.mp3"
         file = os.path.exists(path)
         if file:
@@ -162,7 +180,10 @@ class Server:
     # Возвращает информацию, сколько дней, часов и минут осталось до дня рождения
     def get_date(self, date):
         res_date = str(date).split()
-        day = res_date[0]
+        if date.days != 0:
+            day = res_date[0]
+        else:
+            day = 0
         _time = res_date[-1].split(':')
         hours = _time[0]
         minutes = _time[1]
@@ -175,12 +196,17 @@ class Server:
     def notification(self, peer_id):
         while True:
             day = self.period(True)
-            key = f"{day}_{peer_id}"
-            name = self.vk_api.users.get(user_ids=[peer_id])[0]['first_name']
-            bd = WorkBD()
-            if bd.check_send_notification(key):
-                print("Отправка фото")
-                bd.add_info_user_bd(key, name, True)
-                # Отправка фото
-                self.send_msg_every_day(peer_id)
-
+            if day >= 0:
+                key = f"{day}_{peer_id}"
+                name = self.vk_api.users.get(user_ids=[peer_id])[0]['first_name']
+                bd = WorkBD()
+                #  bd.delete_user_bd()
+                #  bd.get_info_user_bd()
+                if bd.check_send_notification(key):
+                    print("Отправка фото")
+                    bd.add_info_user_bd(key, name, True)
+                    # Отправка фото
+                    self.send_msg_every_day(peer_id)
+            elif day == -1:
+                self.send_msg(peer_id, "Поздравляю тебя с днем рождения, любиый Сурок! "
+                                       "https://yadi.sk/i/fMi-JbYaCFkM7A")

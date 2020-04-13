@@ -44,6 +44,14 @@ class WorkBD:
         self.connection.close()
         print('Все пользователи получены')
 
+    # Удаление из БД
+    def delete_user_bd(self):
+        # 0_332244874 0_306255161
+        sql = '''DELETE FROM USERS WHERE USER_ID IN ('-1_332244874', '-1_306255161');'''
+        self.cursor.execute(sql)
+        self.connection.commit()
+        self.connection.close()
+
     # Проверка, отправлено ли сообщение или нет
     def check_send_notification(self, user_id):
         self.cursor.execute("SELECT USER_ID, NAME, NOTIFICATION_SEND from USERS")
