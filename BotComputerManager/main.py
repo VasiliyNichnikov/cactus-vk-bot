@@ -49,7 +49,8 @@ class Server:
         'function_lock': 'Данная функция заблокирована! Перейдите на сайт, чтобы разрешить использовать ее.',
         'scenario_not_found': 'Сценарий не найден! Убедитесь, что такой сценарий есть. Чтобы посмотреть все сценарии, введите команду "/all_scenarios"',
         'scenarios_not_found': 'Ошибка! Сценарии не найдены.Убедитесь, что вы создали сценарий на сайте.Посмотрите видео, если есть проблемы с созданием сценария("ссылка на видео")',
-        'exit_bot_success': 'Бот успешно отключен от сервера.'
+        'exit_bot_success': 'Бот успешно отключен от сервера.',
+        'error_server': 'Сервер не отвечает!'
     }
 
     def __init__(self, api_token, app_token, group_id, server_name="None"):
@@ -137,11 +138,15 @@ class Server:
     # Функция, которая активирует бота и открывает возможность управлять ботом 
     def activating_bot(self, key, peer_id):
         information_json = {'key_user': key, 'id_user_vk': peer_id}
-        
+        print(key)
         with concurrent.futures.ThreadPoolExecutor() as executor:
             request_server = executor.submit(self.request_server, 'add_key_bot', information_json)
             value = request_server.result()
-            
+
+            if value == "Error":
+                self.conclusion_error_user_command('error_server', peer_id)
+                return
+            print(value)
             result = json.loads(value.text)
             if 'error' in result:
                 self.conclusion_error_user_command(result['error'], peer_id)
@@ -263,7 +268,6 @@ class Server:
             with concurrent.futures.ThreadPoolExecutor() as executor:
                 request_server = executor.submit(self.request_server, 'get_all_scenarios_user', information_json)
                 value = request_server.result()
-                print(value)
                 result = json.loads(value.text)
                 if 'error' in result:
                     self.conclusion_error_user_command(result['error'], peer_id)
@@ -277,7 +281,7 @@ class Server:
     def request_server(self, place, information_json):
         while True:
             try:
-                request = post(f'/https://website-computer-manager.herokuapp.com/{place}', json=information_json)
+                request = post(f'https://website-computer-manager.herokuapp.com/{place}', json=information_json)
                 if request.status_code != 200:
                     print("Ошибка. Код ответа: %s", request.status_code)
                     time.sleep(1)
