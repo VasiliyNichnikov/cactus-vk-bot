@@ -112,10 +112,10 @@ class Server:
     # Получение команды, которую ввел пользователь
     def get_command(self, user_message):
         for i in self.list_commands:
-            if i in user_message:
-                list_user_message = user_message.split()
-                command = list_user_message[0]
-                information = list_user_message[-1]
+            list_user_message = user_message.split()
+            command = list_user_message[0]
+            information = list_user_message[-1]
+            if command == i:
                 return command, information
         return None
 
