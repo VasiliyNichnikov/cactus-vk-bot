@@ -6,6 +6,7 @@ from vk_api.bot_longpoll import VkBotLongPoll
 from vk_api.utils import get_random_id
 from vk_api.bot_longpoll import VkBotEventType
 import threading
+import requests
 from requests import post, get
 
 
@@ -154,7 +155,10 @@ class Server:
         with concurrent.futures.ThreadPoolExecutor() as executor:
             request_server = executor.submit(self.request_server, 'check_key_user', information_json)
             value = request_server.result()
-            
+
+            if "Error" in value:
+                return False
+
             result = json.loads(value.text)
             if 'error' in result:
                 return False
@@ -279,9 +283,9 @@ class Server:
                     time.sleep(1)
                     continue
                 return request
-            except ConnectionRefusedError:
+            except requests.RequestException:
                 print("Ошибка. Не удается подключиться к серверу.")
                 return "Error"
-            except ConnectionError:
+            except requests.ConnectionError:
                 print("Ошибка. Не удается подключиться к серверу.")
                 return "Error"

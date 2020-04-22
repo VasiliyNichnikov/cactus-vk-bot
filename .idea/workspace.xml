@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a78ce58-d61a-4b01-8c34-4615c52f3886" name="Default Changelist" comment="add">
-      <change afterPath="$PROJECT_DIR$/BotComputerManager/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/VK bot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/VK bot.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="1a78ce58-d61a-4b01-8c34-4615c52f3886" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KateBot/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/KateBot/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StartServers.py" beforeDir="false" afterPath="$PROJECT_DIR$/StartServers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BotComputerManager/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/BotComputerManager/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +55,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../website-computer-manager" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -122,7 +118,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="main (2)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="VK bot" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -130,12 +126,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/KateBot" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/BotComputerManager" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\Users\vnich\OneDrive\cactus-vk-bot\KateBot\main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BotComputerManager/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -191,10 +186,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.StartServers" />
+        <item itemvalue="Python.main (2)" />
         <item itemvalue="Python.main (1)" />
         <item itemvalue="Python.work_bd" />
         <item itemvalue="Python.work_image" />
-        <item itemvalue="Python.main" />
       </list>
     </recent_temporary>
   </component>
@@ -244,13 +239,6 @@
       <workItem from="1586775782178" duration="139000" />
       <workItem from="1586776049333" duration="444000" />
       <workItem from="1586783816457" duration="50000" />
-    </task>
-    <task id="LOCAL-00003" summary="Ready Two">
-      <created>1575152272624</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1575152272624</updated>
     </task>
     <task id="LOCAL-00004" summary="Ready Two">
       <created>1575152444852</created>
@@ -588,7 +576,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586776236579</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="add">
+      <created>1587545497044</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1587545497044</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -624,7 +619,8 @@
     <MESSAGE value="almost finished app" />
     <MESSAGE value="The bot is ready, just add a link" />
     <MESSAGE value="Ready bot" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ready bot" />
+    <MESSAGE value="add" />
+    <option name="LAST_COMMIT_MESSAGE" value="add" />
   </component>
   <component name="WindowStateProjectService">
     <state x="872" y="198" key="#SQL_Dialects" timestamp="1585908827246">
@@ -643,30 +639,30 @@
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state x="1010" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1585390158329" />
-    <state x="934" y="134" key="CommitChangelistDialog2" timestamp="1587545441726">
+    <state x="934" y="134" key="CommitChangelistDialog2" timestamp="1587545495312">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state x="934" y="134" key="CommitChangelistDialog2/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1587545441726" />
-    <state x="1060" y="294" key="FileChooserDialogImpl" timestamp="1587321222523">
+    <state x="934" y="134" key="CommitChangelistDialog2/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1587545495312" />
+    <state x="1060" y="294" key="FileChooserDialogImpl" timestamp="1587546102399">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state x="1060" y="294" key="FileChooserDialogImpl/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1587321222523" />
-    <state width="2517" height="295" key="GridCell.Tab.0.bottom" timestamp="1586776494112">
+    <state x="1060" y="294" key="FileChooserDialogImpl/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1587546102399" />
+    <state width="2539" height="295" key="GridCell.Tab.0.bottom" timestamp="1587546159450">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state width="2517" height="295" key="GridCell.Tab.0.bottom/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1586776494112" />
-    <state width="2517" height="295" key="GridCell.Tab.0.center" timestamp="1586776494111">
+    <state width="2539" height="295" key="GridCell.Tab.0.bottom/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1587546159450" />
+    <state width="2539" height="295" key="GridCell.Tab.0.center" timestamp="1587546159450">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state width="2517" height="295" key="GridCell.Tab.0.center/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1586776494111" />
-    <state width="2517" height="295" key="GridCell.Tab.0.left" timestamp="1586776494111">
+    <state width="2539" height="295" key="GridCell.Tab.0.center/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1587546159450" />
+    <state width="2539" height="295" key="GridCell.Tab.0.left" timestamp="1587546159450">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state width="2517" height="295" key="GridCell.Tab.0.left/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1586776494111" />
-    <state width="2517" height="295" key="GridCell.Tab.0.right" timestamp="1586776494112">
+    <state width="2539" height="295" key="GridCell.Tab.0.left/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1587546159450" />
+    <state width="2539" height="295" key="GridCell.Tab.0.right" timestamp="1587546159450">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state width="2517" height="295" key="GridCell.Tab.0.right/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1586776494112" />
+    <state width="2539" height="295" key="GridCell.Tab.0.right/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1587546159450" />
     <state width="2517" height="363" key="GridCell.Tab.1.bottom" timestamp="1585925002003">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
@@ -688,10 +684,10 @@
     </state>
     <state x="-1055" y="188" key="SettingsEditor/0.0.2560.1080/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1587300541645" />
     <state x="1153" y="188" key="SettingsEditor/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1587540999717" />
-    <state x="872" y="273" key="Vcs.Push.Dialog.v2" timestamp="1586776246452">
+    <state x="872" y="273" key="Vcs.Push.Dialog.v2" timestamp="1587545502955">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state x="872" y="273" key="Vcs.Push.Dialog.v2/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1586776246452" />
+    <state x="872" y="273" key="Vcs.Push.Dialog.v2/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1587545502955" />
     <state x="996" y="120" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1585912863920">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
