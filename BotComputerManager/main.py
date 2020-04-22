@@ -277,7 +277,7 @@ class Server:
     def request_server(self, place, information_json):
         while True:
             try:
-                request = post(f'https://website-computer-manager.herokuapp.com/{place}', json=information_json)
+                request = post(f'http://127.0.0.1:5001/{place}', json=information_json)
                 if request.status_code != 200:
                     print("Ошибка. Код ответа: %s", request.status_code)
                     time.sleep(1)
