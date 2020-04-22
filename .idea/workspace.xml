@@ -240,13 +240,6 @@
       <workItem from="1586776049333" duration="444000" />
       <workItem from="1586783816457" duration="50000" />
     </task>
-    <task id="LOCAL-00004" summary="Ready Two">
-      <created>1575152444852</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1575152444852</updated>
-    </task>
     <task id="LOCAL-00005" summary="Ready Two">
       <created>1575152764731</created>
       <option name="number" value="00005" />
@@ -583,7 +576,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587545497044</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="add bot">
+      <created>1587546495031</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1587546495031</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -620,7 +620,8 @@
     <MESSAGE value="The bot is ready, just add a link" />
     <MESSAGE value="Ready bot" />
     <MESSAGE value="add" />
-    <option name="LAST_COMMIT_MESSAGE" value="add" />
+    <MESSAGE value="add bot" />
+    <option name="LAST_COMMIT_MESSAGE" value="add bot" />
   </component>
   <component name="WindowStateProjectService">
     <state x="872" y="198" key="#SQL_Dialects" timestamp="1585908827246">
@@ -639,10 +640,10 @@
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state x="1010" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1585390158329" />
-    <state x="934" y="134" key="CommitChangelistDialog2" timestamp="1587545495312">
+    <state x="934" y="134" key="CommitChangelistDialog2" timestamp="1587546494297">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state x="934" y="134" key="CommitChangelistDialog2/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1587545495312" />
+    <state x="934" y="134" key="CommitChangelistDialog2/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1587546494297" />
     <state x="1060" y="294" key="FileChooserDialogImpl" timestamp="1587546102399">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
@@ -684,10 +685,10 @@
     </state>
     <state x="-1055" y="188" key="SettingsEditor/0.0.2560.1080/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1587300541645" />
     <state x="1153" y="188" key="SettingsEditor/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1587540999717" />
-    <state x="872" y="273" key="Vcs.Push.Dialog.v2" timestamp="1587545502955">
+    <state x="872" y="273" key="Vcs.Push.Dialog.v2" timestamp="1587546499645">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state x="872" y="273" key="Vcs.Push.Dialog.v2/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1587545502955" />
+    <state x="872" y="273" key="Vcs.Push.Dialog.v2/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1587546499645" />
     <state x="996" y="120" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1585912863920">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>

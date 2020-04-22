@@ -279,13 +279,10 @@ class Server:
             try:
                 request = post(f'https://website-computer-manager.herokuapp.com/{place}', json=information_json)
                 if request.status_code != 200:
-                    print("Ошибка. Код ответа: %s", request.status)
+                    print("Ошибка. Код ответа: %s", request.status_code)
                     time.sleep(1)
                     continue
                 return request
             except requests.RequestException:
-                print("Ошибка. Не удается подключиться к серверу.")
-                return "Error"
-            except requests.ConnectionError:
                 print("Ошибка. Не удается подключиться к серверу.")
                 return "Error"
