@@ -136,8 +136,7 @@ class Server:
             return True
         return False
 
-        # Проверяет, есть ли аудио файл
-
+    # Проверяет, есть ли изображение файл
     def check_image(self, num_day):
         path = f"KateBot/static/images/kate_{num_day}.jpeg"
         file = os.path.exists(path)

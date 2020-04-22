@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a78ce58-d61a-4b01-8c34-4615c52f3886" name="Default Changelist" comment="">
+    <list default="true" id="1a78ce58-d61a-4b01-8c34-4615c52f3886" name="Default Changelist" comment="add">
+      <change afterPath="$PROJECT_DIR$/BotComputerManager/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/VK bot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/VK bot.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KateBot/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/KateBot/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StartServers.py" beforeDir="false" afterPath="$PROJECT_DIR$/StartServers.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -237,13 +242,8 @@
       <workItem from="1586679886010" duration="1772000" />
       <workItem from="1586772378488" duration="3251000" />
       <workItem from="1586775782178" duration="139000" />
-    </task>
-    <task id="LOCAL-00002" summary="Ready Two">
-      <created>1575152118746</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1575152118746</updated>
+      <workItem from="1586776049333" duration="444000" />
+      <workItem from="1586783816457" duration="50000" />
     </task>
     <task id="LOCAL-00003" summary="Ready Two">
       <created>1575152272624</created>
@@ -581,7 +581,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586775611686</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="Ready bot">
+      <created>1586776236578</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1586776236579</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -636,30 +643,30 @@
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state x="1010" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1585390158329" />
-    <state x="934" y="134" key="CommitChangelistDialog2" timestamp="1586775605743">
+    <state x="934" y="134" key="CommitChangelistDialog2" timestamp="1587545441726">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state x="934" y="134" key="CommitChangelistDialog2/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1586775605743" />
-    <state x="1060" y="294" key="FileChooserDialogImpl" timestamp="1585989454717">
+    <state x="934" y="134" key="CommitChangelistDialog2/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1587545441726" />
+    <state x="1060" y="294" key="FileChooserDialogImpl" timestamp="1587321222523">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state x="1060" y="294" key="FileChooserDialogImpl/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1585989454717" />
-    <state width="2517" height="295" key="GridCell.Tab.0.bottom" timestamp="1586776219242">
+    <state x="1060" y="294" key="FileChooserDialogImpl/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1587321222523" />
+    <state width="2517" height="295" key="GridCell.Tab.0.bottom" timestamp="1586776494112">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state width="2517" height="295" key="GridCell.Tab.0.bottom/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1586776219242" />
-    <state width="2517" height="295" key="GridCell.Tab.0.center" timestamp="1586776219242">
+    <state width="2517" height="295" key="GridCell.Tab.0.bottom/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1586776494112" />
+    <state width="2517" height="295" key="GridCell.Tab.0.center" timestamp="1586776494111">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state width="2517" height="295" key="GridCell.Tab.0.center/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1586776219242" />
-    <state width="2517" height="295" key="GridCell.Tab.0.left" timestamp="1586776219242">
+    <state width="2517" height="295" key="GridCell.Tab.0.center/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1586776494111" />
+    <state width="2517" height="295" key="GridCell.Tab.0.left" timestamp="1586776494111">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state width="2517" height="295" key="GridCell.Tab.0.left/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1586776219242" />
-    <state width="2517" height="295" key="GridCell.Tab.0.right" timestamp="1586776219242">
+    <state width="2517" height="295" key="GridCell.Tab.0.left/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1586776494111" />
+    <state width="2517" height="295" key="GridCell.Tab.0.right" timestamp="1586776494112">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state width="2517" height="295" key="GridCell.Tab.0.right/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1586776219242" />
+    <state width="2517" height="295" key="GridCell.Tab.0.right/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1586776494112" />
     <state width="2517" height="363" key="GridCell.Tab.1.bottom" timestamp="1585925002003">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
@@ -676,22 +683,24 @@
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state width="2517" height="363" key="GridCell.Tab.1.right/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1585925002003" />
-    <state x="1153" y="188" key="SettingsEditor" timestamp="1585915550188">
+    <state x="1153" y="188" key="SettingsEditor" timestamp="1587540999717">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state x="1153" y="188" key="SettingsEditor/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1585915550188" />
-    <state x="872" y="273" key="Vcs.Push.Dialog.v2" timestamp="1586775621330">
+    <state x="-1055" y="188" key="SettingsEditor/0.0.2560.1080/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1587300541645" />
+    <state x="1153" y="188" key="SettingsEditor/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1587540999717" />
+    <state x="872" y="273" key="Vcs.Push.Dialog.v2" timestamp="1586776246452">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state x="872" y="273" key="Vcs.Push.Dialog.v2/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1586775621330" />
+    <state x="872" y="273" key="Vcs.Push.Dialog.v2/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1586776246452" />
     <state x="996" y="120" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1585912863920">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state x="996" y="120" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1585912863920" />
-    <state x="188" y="369" key="com.intellij.ide.util.TipDialog" timestamp="1586776052519">
-      <screen x="0" y="0" width="2560" height="1080" />
+    <state x="-1779" y="369" key="com.intellij.ide.util.TipDialog" timestamp="1587321197864">
+      <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="188" y="369" key="com.intellij.ide.util.TipDialog/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1586776052519" />
+    <state x="-1779" y="369" key="com.intellij.ide.util.TipDialog/0.0.2560.1080/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1587321197864" />
+    <state x="188" y="369" key="com.intellij.ide.util.TipDialog/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1586943865907" />
     <state x="943" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1585391651781">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
@@ -706,11 +715,5 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/cactus_vk_bot$StartServers.coverage" NAME="StartServers Coverage Results" MODIFIED="1586776219234" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/cactus_vk_bot$work_image.coverage" NAME="work_image Coverage Results" MODIFIED="1585663563063" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/KateBot" />
-    <SUITE FILE_PATH="coverage/cactus_vk_bot$work_bd.coverage" NAME="work_bd Coverage Results" MODIFIED="1585917308013" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/KateBot" />
-    <SUITE FILE_PATH="coverage/cactus_vk_bot$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1585917338904" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/KateBot" />
   </component>
 </project>
