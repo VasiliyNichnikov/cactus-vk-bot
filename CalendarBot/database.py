@@ -1,5 +1,4 @@
 import sqlite3
-from datetime import datetime
 from sqlite3 import Error
 
 
@@ -75,6 +74,12 @@ class WorkingDataBase:
                         user_id = {}""".format(selected_function, user_id)
         self.execute_query(change_selected_function)
 
+    def reset_selected_function(self):
+        reset_selected_function = """
+            UPDATE users SET selected_function = "null" 
+        """
+        self.execute_query(reset_selected_function)
+
     def get_user(self, user_id):
         select_user = """
             SELECT user_id, selected_function, phase_function  FROM users WHERE user_id == {}
@@ -86,6 +91,5 @@ class WorkingDataBase:
                 'selected_function': user[0][1],
                 'phase_function': user[0][2]
             }
-
             return dict_user
         return None

@@ -46,12 +46,15 @@ class CreateEvent:
         self.user_id = user_id
         self.vk_api = vk_api
         self.google_api = google_api
+
         self.name_event = ''
         self.description_event = '',
         self.color_event = ''
         self.day_month_year_event = ''
         self.time_event = ''
+
         self.stage = list(self.dict_create_events.keys())[0]
+
         self.send_msg(self.dict_create_events['name_event'])
 
         self.dict_phase_functions = {
@@ -69,6 +72,7 @@ class CreateEvent:
 
     def creating_reminder(self, user_msg):
         try:
+            # self.send_msg(self.dict_create_events[self.stage])
             self.dict_phase_functions[self.stage](user_msg)
             self.next_stage()
         except ErrorCreateEvents as error:
@@ -84,6 +88,7 @@ class CreateEvent:
         self.description_event = user_msg
         if self.description_event == '-':
             print('Описания нет.')
+            self.description_event = ''
         # self.stage = 'color_event'
 
     def function_color_event(self, user_msg):

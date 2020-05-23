@@ -16,12 +16,13 @@ class Server(WorkingDataBase):
     list_all_events = []
 
     dict_errors = {
-        'error_teams_not_found': 'Ошибка! Такой команды нет! Убедитесь, что вы ввели все правильно!',
-        'not_logged': 'Ошибка! Вы не авторизованы. Введите /authorization, чтобы войти.'
+        'error_teams_not_found': 'Ошибка! Такой команды нет! Убедитесь, что вы ввели все правильно!'
     }
 
+    # CalendarBot/Users.sqlite
     def __init__(self, api_token, group_id, server_name, path_database):
         super().__init__(path_database)
+        self.reset_selected_function()
         self.path_database = path_database
         self.server_name = server_name
         self.vk = vk_api.VkApi(token=api_token)
@@ -41,8 +42,8 @@ class Server(WorkingDataBase):
     # Приветсие
     def start_bot(self, *args):
         send_id = int(args[0]['user_id'])
-        self.send_msg(send_id, 'Приветствую!'
-                      ' Я умею создавать напоминания в google календарь. '
+        self.send_msg(send_id, 'Приветствую! '
+                      'Я умею создавать напоминания в google календарь. '
                       'Чтобы создать напоминание, введите /create_event. ')
 
     # Получает класс, который сейчас используется для создания напоминания
@@ -60,8 +61,15 @@ class Server(WorkingDataBase):
         for i in range(len(self.list_all_events)):
             if self.list_all_events[i] == event:
                 self.update_selected_function(event.user_id, 'null')
+                print("change")
                 del self.list_all_events[i]
                 break
+
+    def check_delete(self, send_id):
+        for event in self.list_all_events:
+            if event.user_id == send_id:
+                if event.check_stage_end():
+                    self.delete_event(event)
 
     # Проверка, есть ли созданное напоминание в списке
     def check_create_event(self, send_id):
@@ -86,6 +94,7 @@ class Server(WorkingDataBase):
             class_create_event = self.get_class(send_id)
             if class_create_event is not None:
                 class_create_event.creating_reminder(user_msg)
+                self.check_delete(send_id)
 
     # Возвращает команду, которая выполняется у пользователя
     def get_command_user(self, user_msg):

@@ -1,20 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a78ce58-d61a-4b01-8c34-4615c52f3886" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/CalendarBot/Users.sqlite" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CalendarBot/create_event.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CalendarBot/credentials.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CalendarBot/database.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CalendarBot/script.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CalendarBot/token_306255161.pickle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CalendarBot/working_google_calendar.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/VK bot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/VK bot.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="1a78ce58-d61a-4b01-8c34-4615c52f3886" name="Default Changelist" comment="New Bot, Calendar Bot">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KateBot/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/KateBot/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StartServers.py" beforeDir="false" afterPath="$PROJECT_DIR$/StartServers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CalendarBot/Users.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/CalendarBot/Users.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CalendarBot/create_event.py" beforeDir="false" afterPath="$PROJECT_DIR$/CalendarBot/create_event.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CalendarBot/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/CalendarBot/database.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CalendarBot/script.py" beforeDir="false" afterPath="$PROJECT_DIR$/CalendarBot/script.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CalendarBot/token_306255161.pickle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CalendarBot/working_google_calendar.py" beforeDir="false" afterPath="$PROJECT_DIR$/CalendarBot/working_google_calendar.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +78,7 @@
       <recent name="C:\Users\vnich\OneDrive\cactus-vk-bot\KateBot\static\Fonts" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.test">
+  <component name="RunManager" selected="Python.StartServers">
     <configuration name="StartServers" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="VK bot" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -197,8 +191,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.test" />
         <item itemvalue="Python.StartServers" />
+        <item itemvalue="Python.test" />
         <item itemvalue="Python.working_google_calendar" />
         <item itemvalue="Python.create_event" />
         <item itemvalue="Python.database" />
@@ -263,14 +257,8 @@
       <workItem from="1589981382721" duration="8094000" />
       <workItem from="1590061063136" duration="10874000" />
       <workItem from="1590131649679" duration="10472000" />
-      <workItem from="1590169282621" duration="366000" />
-    </task>
-    <task id="LOCAL-00003" summary="Ready Two">
-      <created>1575152272624</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1575152272624</updated>
+      <workItem from="1590169282621" duration="585000" />
+      <workItem from="1590237121148" duration="5726000" />
     </task>
     <task id="LOCAL-00004" summary="Ready Two">
       <created>1575152444852</created>
@@ -608,7 +596,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586776236579</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="New Bot, Calendar Bot">
+      <created>1590169685851</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1590169685851</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -644,7 +639,8 @@
     <MESSAGE value="almost finished app" />
     <MESSAGE value="The bot is ready, just add a link" />
     <MESSAGE value="Ready bot" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ready bot" />
+    <MESSAGE value="New Bot, Calendar Bot" />
+    <option name="LAST_COMMIT_MESSAGE" value="New Bot, Calendar Bot" />
   </component>
   <component name="WindowStateProjectService">
     <state x="872" y="198" key="#Inspections" timestamp="1589152126556">
@@ -667,30 +663,34 @@
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state x="1010" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1590154920343" />
-    <state x="934" y="134" key="CommitChangelistDialog2" timestamp="1590169681057">
+    <state x="934" y="134" key="CommitChangelistDialog2" timestamp="1590169790979">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state x="934" y="134" key="CommitChangelistDialog2/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1590169681057" />
+    <state x="934" y="134" key="CommitChangelistDialog2/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1590169790979" />
     <state x="1060" y="294" key="FileChooserDialogImpl" timestamp="1589195982947">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state x="1060" y="294" key="FileChooserDialogImpl/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1589195982947" />
-    <state width="2517" height="363" key="GridCell.Tab.0.bottom" timestamp="1590168743513">
+    <state width="2517" height="295" key="GridCell.Tab.0.bottom" timestamp="1590242585750">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state width="2517" height="363" key="GridCell.Tab.0.bottom/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1590168743513" />
-    <state width="2517" height="363" key="GridCell.Tab.0.center" timestamp="1590168743513">
+    <state width="1877" height="295" key="GridCell.Tab.0.bottom/0.0.2560.1080/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1590242024066" />
+    <state width="2517" height="295" key="GridCell.Tab.0.bottom/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1590242585750" />
+    <state width="2517" height="295" key="GridCell.Tab.0.center" timestamp="1590242585750">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state width="2517" height="363" key="GridCell.Tab.0.center/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1590168743513" />
-    <state width="2517" height="363" key="GridCell.Tab.0.left" timestamp="1590168743513">
+    <state width="1877" height="295" key="GridCell.Tab.0.center/0.0.2560.1080/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1590242024066" />
+    <state width="2517" height="295" key="GridCell.Tab.0.center/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1590242585750" />
+    <state width="2517" height="295" key="GridCell.Tab.0.left" timestamp="1590242585750">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state width="2517" height="363" key="GridCell.Tab.0.left/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1590168743513" />
-    <state width="2517" height="363" key="GridCell.Tab.0.right" timestamp="1590168743513">
+    <state width="1877" height="295" key="GridCell.Tab.0.left/0.0.2560.1080/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1590242024066" />
+    <state width="2517" height="295" key="GridCell.Tab.0.left/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1590242585750" />
+    <state width="2517" height="295" key="GridCell.Tab.0.right" timestamp="1590242585750">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state width="2517" height="363" key="GridCell.Tab.0.right/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1590168743513" />
+    <state width="1877" height="295" key="GridCell.Tab.0.right/0.0.2560.1080/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1590242024066" />
+    <state width="2517" height="295" key="GridCell.Tab.0.right/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1590242585750" />
     <state width="2517" height="363" key="GridCell.Tab.1.bottom" timestamp="1590168743514">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
@@ -707,22 +707,30 @@
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state width="2517" height="363" key="GridCell.Tab.1.right/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1590168743514" />
+    <state x="248" y="90" key="MergeDialog" timestamp="1590169750600">
+      <screen x="0" y="0" width="2560" height="1080" />
+    </state>
+    <state x="248" y="90" key="MergeDialog/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1590169750600" />
+    <state x="992" y="256" key="MultipleFileMergeDialog" timestamp="1590169754736">
+      <screen x="0" y="0" width="2560" height="1080" />
+    </state>
+    <state x="992" y="256" key="MultipleFileMergeDialog/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1590169754736" />
     <state x="571" y="194" key="SettingsEditor" timestamp="1589152656353">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state x="571" y="194" key="SettingsEditor/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1589152656353" />
-    <state x="872" y="273" key="Vcs.Push.Dialog.v2" timestamp="1586776246452">
+    <state x="872" y="273" key="Vcs.Push.Dialog.v2" timestamp="1590169796042">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state x="872" y="273" key="Vcs.Push.Dialog.v2/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1586776246452" />
+    <state x="872" y="273" key="Vcs.Push.Dialog.v2/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1590169796042" />
     <state x="996" y="120" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1585912863920">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state x="996" y="120" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1585912863920" />
-    <state x="188" y="369" key="com.intellij.ide.util.TipDialog" timestamp="1590169648809">
+    <state x="188" y="369" key="com.intellij.ide.util.TipDialog" timestamp="1590237133216">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state x="188" y="369" key="com.intellij.ide.util.TipDialog/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1590169648809" />
+    <state x="188" y="369" key="com.intellij.ide.util.TipDialog/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1590237133216" />
     <state x="943" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1589992914949">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
@@ -746,6 +754,6 @@
     <SUITE FILE_PATH="coverage/cactus_vk_bot$script.coverage" NAME="script Coverage Results" MODIFIED="1589194229964" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CalendarBot" />
     <SUITE FILE_PATH="coverage/cactus_vk_bot$test.coverage" NAME="test Coverage Results" MODIFIED="1590168287398" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CalendarBot" />
     <SUITE FILE_PATH="coverage/cactus_vk_bot$google.coverage" NAME="google Coverage Results" MODIFIED="1589026990201" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CalendarBot" />
-    <SUITE FILE_PATH="coverage/cactus_vk_bot$StartServers.coverage" NAME="StartServers Coverage Results" MODIFIED="1590155251161" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cactus_vk_bot$StartServers.coverage" NAME="StartServers Coverage Results" MODIFIED="1590242585744" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

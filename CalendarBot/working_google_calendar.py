@@ -22,8 +22,10 @@ class WorkingGoogleCalendarAPI:
             if self.creds and self.creds.expired and self.creds.refresh_token:
                 self.creds.refresh(Request())
             else:
+                print('2')
                 flow = InstalledAppFlow.from_client_secrets_file('CalendarBot/credentials.json', SCOPES)
-                self.creds = flow.run_local_server(port=0)
+                self.creds = flow.run_local_server(port=0, open_browser=False)
+                print(self.creds)
             with open(f'CalendarBot/token_{user_id}.pickle', 'wb') as token:
                 pickle.dump(self.creds, token)
 
@@ -52,16 +54,3 @@ class WorkingGoogleCalendarAPI:
         time_start += ':00'
         time_end += ':00'
         return time_start, time_end
-
-
-# new_event = WorkingGoogleCalendarAPI()
-# new_event.create_event('Завтрак', 'Описание', '9', '22.5.2020', '10:00-11:00')
-
-# {'name_event': 'Завтрак', 'description_event': 'Описание',
-# 'color_event': '9', 'day_month_year_event': '21.5.2020', 'time_event': '10:00-10:01'}
-#  def create_event(name, color, day_month_year, time):
-
-
-#
-# if __name__ == '__main__':
-#     main()
