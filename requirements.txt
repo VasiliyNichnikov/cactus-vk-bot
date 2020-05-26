@@ -28,4 +28,4 @@ bs4==0.0.1
 Pillow==7.1.0
 psycopg2-binary==2.8.4
 psycopg2==2.8.4
-googleapiclient==1
+google==2.0.3
