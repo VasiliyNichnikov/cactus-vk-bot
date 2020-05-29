@@ -1,6 +1,7 @@
-from __future__ import print_function
+# from __future__ import print_function
 import pickle
 import os.path
+
 from googleapiclient.discovery import build
 from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
@@ -22,7 +23,6 @@ class WorkingGoogleCalendarAPI:
             if self.creds and self.creds.expired and self.creds.refresh_token:
                 self.creds.refresh(Request())
             else:
-                print('2')
                 flow = InstalledAppFlow.from_client_secrets_file('CalendarBot/credentials.json', SCOPES)
                 self.creds = flow.run_local_server(port=0, open_browser=False)
                 print(self.creds)

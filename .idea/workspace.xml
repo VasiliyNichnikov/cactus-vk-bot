@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1a78ce58-d61a-4b01-8c34-4615c52f3886" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -254,14 +253,8 @@
       <workItem from="1590131649679" duration="10472000" />
       <workItem from="1590169282621" duration="585000" />
       <workItem from="1590237121148" duration="5786000" />
-      <workItem from="1590489899930" duration="800000" />
-    </task>
-    <task id="LOCAL-00007" summary="Ready Two">
-      <created>1575153595167</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1575153595167</updated>
+      <workItem from="1590489899930" duration="2179000" />
+      <workItem from="1590586163058" duration="136000" />
     </task>
     <task id="LOCAL-00008" summary="Ready Two">
       <created>1575153890488</created>
@@ -599,7 +592,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590490521825</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="New Bot, Calendar Bot">
+      <created>1590490746425</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1590490746425</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -659,14 +659,14 @@
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state x="1010" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1590154920343" />
-    <state x="934" y="134" key="CommitChangelistDialog2" timestamp="1590490521177">
+    <state x="934" y="134" key="CommitChangelistDialog2" timestamp="1590490745711">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state x="934" y="134" key="CommitChangelistDialog2/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1590490521177" />
-    <state x="1060" y="294" key="FileChooserDialogImpl" timestamp="1589195982947">
+    <state x="934" y="134" key="CommitChangelistDialog2/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1590490745711" />
+    <state x="1060" y="294" key="FileChooserDialogImpl" timestamp="1590586298017">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state x="1060" y="294" key="FileChooserDialogImpl/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1589195982947" />
+    <state x="1060" y="294" key="FileChooserDialogImpl/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1590586298017" />
     <state width="2517" height="295" key="GridCell.Tab.0.bottom" timestamp="1590242913252">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
@@ -715,18 +715,18 @@
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state x="571" y="194" key="SettingsEditor/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1590490506081" />
-    <state x="872" y="273" key="Vcs.Push.Dialog.v2" timestamp="1590490526259">
+    <state x="872" y="273" key="Vcs.Push.Dialog.v2" timestamp="1590490751555">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state x="872" y="273" key="Vcs.Push.Dialog.v2/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1590490526259" />
+    <state x="872" y="273" key="Vcs.Push.Dialog.v2/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1590490751555" />
     <state x="996" y="120" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1585912863920">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state x="996" y="120" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1585912863920" />
-    <state x="188" y="369" key="com.intellij.ide.util.TipDialog" timestamp="1590489900154">
+    <state x="188" y="369" key="com.intellij.ide.util.TipDialog" timestamp="1590586169229">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state x="188" y="369" key="com.intellij.ide.util.TipDialog/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1590489900154" />
+    <state x="188" y="369" key="com.intellij.ide.util.TipDialog/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1590586169229" />
     <state x="943" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1589992914949">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
