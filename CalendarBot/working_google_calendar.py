@@ -24,7 +24,10 @@ class WorkingGoogleCalendarAPI:
             else:
                 # flow = run_flow('CalendarBot/credentials.json', SCOPES)
                 flow = InstalledAppFlow.from_client_secrets_file('CalendarBot/credentials.json', SCOPES)
-                self.creds = flow.run_local_server(port=0)
+                # flow.redirect_uri = 'http://{}:{}/'.format('localhost', )
+                print(flow.authorization_url()[0])
+                
+                # self.creds = flow.run_local_server(port=0)
                 # print(flow.redirect_uri)
                 # print(self.creds)
             with open(f'CalendarBot/token_{user_id}.pickle', 'wb') as token:
