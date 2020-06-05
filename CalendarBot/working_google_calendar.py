@@ -2,6 +2,12 @@
 import pickle
 import os.path
 
+import gflags
+# from apiclient.discovery import build
+from oauth2client.tools import run_flow
+from oauth2client.file import Storage
+from oauth2client.client import OAuth2WebServerFlow
+
 from googleapiclient.discovery import build
 from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
@@ -23,14 +29,18 @@ class WorkingGoogleCalendarAPI:
             if self.creds and self.creds.expired and self.creds.refresh_token:
                 self.creds.refresh(Request())
             else:
+                # flow = run_flow('CalendarBot/credentials.json', SCOPES)
                 flow = InstalledAppFlow.from_client_secrets_file('CalendarBot/credentials.json', SCOPES)
-                self.creds = flow.run_local_server(port=0, open_browser=False)
-                print(self.creds)
+                self.creds = flow.run_local_server(port=0)
+                # print(flow.redirect_uri)
+                # print(self.creds)
             with open(f'CalendarBot/token_{user_id}.pickle', 'wb') as token:
                 pickle.dump(self.creds, token)
 
     def create_event(self, name_event, description_event, color_event, day_month_year_event, time_event):
         service = build('calendar', 'v3', credentials=self.creds)
+        # service = build(serviceName='calendar', version='v3', http=self.http,
+        #                 developerKey='AI6456456456456456456456456456yKhI')
         GMT_OFF = '+03:00'
         time_start, time_end = self.get_time(time_event)
         new_event = {'summary': name_event,
