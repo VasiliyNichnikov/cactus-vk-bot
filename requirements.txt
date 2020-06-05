@@ -30,3 +30,4 @@ psycopg2-binary==2.8.4
 psycopg2==2.8.4
 google==2.0.3
 google-api-python-client==1.9.1
+google-auth-oauthlib==0.4.1

@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1a78ce58-d61a-4b01-8c34-4615c52f3886" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CalendarBot/working_google_calendar.py" beforeDir="false" afterPath="$PROJECT_DIR$/CalendarBot/working_google_calendar.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -259,21 +257,7 @@
       <workItem from="1590586163058" duration="136000" />
       <workItem from="1590760299458" duration="1909000" />
       <workItem from="1591056975103" duration="46000" />
-      <workItem from="1591351642938" duration="850000" />
-    </task>
-    <task id="LOCAL-00009" summary="Ready Two">
-      <created>1575154322710</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1575154322710</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Ready Two">
-      <created>1575154542509</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1575154542509</updated>
+      <workItem from="1591351642938" duration="1100000" />
     </task>
     <task id="LOCAL-00011" summary="Ready Two">
       <created>1575154804161</created>
@@ -604,7 +588,21 @@
       <option name="project" value="LOCAL" />
       <updated>1590760486649</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="Отправка бота на сервер">
+      <created>1591352513590</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1591352513590</updated>
+    </task>
+    <task id="LOCAL-00059" summary="Отправка бота на сервер">
+      <created>1591352724400</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1591352724400</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -641,7 +639,8 @@
     <MESSAGE value="The bot is ready, just add a link" />
     <MESSAGE value="Ready bot" />
     <MESSAGE value="New Bot, Calendar Bot" />
-    <option name="LAST_COMMIT_MESSAGE" value="New Bot, Calendar Bot" />
+    <MESSAGE value="Отправка бота на сервер" />
+    <option name="LAST_COMMIT_MESSAGE" value="Отправка бота на сервер" />
   </component>
   <component name="WindowStateProjectService">
     <state x="872" y="198" key="#Inspections" timestamp="1589152126556">
@@ -664,11 +663,11 @@
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state x="1010" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1590154920343" />
-    <state x="934" y="134" key="CommitChangelistDialog2" timestamp="1591352512219">
+    <state x="934" y="134" key="CommitChangelistDialog2" timestamp="1591352723717">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state x="934" y="134" key="CommitChangelistDialog2/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1590760484358" />
-    <state x="934" y="134" key="CommitChangelistDialog2/0.0.2560.1080/2560.0.1920.1080@0.0.2560.1080" timestamp="1591352512219" />
+    <state x="934" y="134" key="CommitChangelistDialog2/0.0.2560.1080/2560.0.1920.1080@0.0.2560.1080" timestamp="1591352723717" />
     <state x="1060" y="294" key="FileChooserDialogImpl" timestamp="1591057026272">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
@@ -725,11 +724,11 @@
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state x="571" y="194" key="SettingsEditor/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1590760764359" />
-    <state x="872" y="273" key="Vcs.Push.Dialog.v2" timestamp="1591352519002">
+    <state x="872" y="273" key="Vcs.Push.Dialog.v2" timestamp="1591352740768">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state x="872" y="273" key="Vcs.Push.Dialog.v2/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1590760492491" />
-    <state x="872" y="273" key="Vcs.Push.Dialog.v2/0.0.2560.1080/2560.0.1920.1080@0.0.2560.1080" timestamp="1591352519002" />
+    <state x="872" y="273" key="Vcs.Push.Dialog.v2/0.0.2560.1080/2560.0.1920.1080@0.0.2560.1080" timestamp="1591352740768" />
     <state x="996" y="120" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1585912863920">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
