@@ -664,10 +664,11 @@
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state x="1010" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1590154920343" />
-    <state x="934" y="134" key="CommitChangelistDialog2" timestamp="1590760484358">
+    <state x="934" y="134" key="CommitChangelistDialog2" timestamp="1591352512219">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state x="934" y="134" key="CommitChangelistDialog2/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1590760484358" />
+    <state x="934" y="134" key="CommitChangelistDialog2/0.0.2560.1080/2560.0.1920.1080@0.0.2560.1080" timestamp="1591352512219" />
     <state x="1060" y="294" key="FileChooserDialogImpl" timestamp="1591057026272">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
@@ -724,10 +725,11 @@
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state x="571" y="194" key="SettingsEditor/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1590760764359" />
-    <state x="872" y="273" key="Vcs.Push.Dialog.v2" timestamp="1590760492491">
+    <state x="872" y="273" key="Vcs.Push.Dialog.v2" timestamp="1591352519002">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state x="872" y="273" key="Vcs.Push.Dialog.v2/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1590760492491" />
+    <state x="872" y="273" key="Vcs.Push.Dialog.v2/0.0.2560.1080/2560.0.1920.1080@0.0.2560.1080" timestamp="1591352519002" />
     <state x="996" y="120" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1585912863920">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
