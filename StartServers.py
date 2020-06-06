@@ -1,4 +1,4 @@
-from CalendarBot.script import Server
+from BotCalendar.script import Server
 
 # токен вк api
 vk_api_token = "5d657387b5ddbb3c3f735546ae27d2aac9ddfa50b20a6619c197c803e0fcdefc8608c5c1a6d25ead07a60"
@@ -9,5 +9,5 @@ app_token = "d20982366e78b639274c82289794f835b5ac469e8001e2c7e5667e5ed673d1262d6
 
 
 if __name__ == '__main__':
-    server_calendar_bot = Server(vk_api_token, 187407860, 'Calendar Bot', 'CalendarBot/Users.sqlite')
+    server_calendar_bot = Server(vk_api_token, 187407860, 'Calendar Bot', 'BotCalendar/Users.sqlite')
     server_calendar_bot.start()

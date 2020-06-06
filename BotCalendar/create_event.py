@@ -1,5 +1,6 @@
 import calendar
 import datetime
+import requests
 from vk_api.utils import get_random_id
 
 
@@ -42,10 +43,9 @@ class CreateEvent:
 
     list_colors = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
 
-    def __init__(self, user_id, vk_api, google_api):
+    def __init__(self, user_id, vk_api):
         self.user_id = user_id
         self.vk_api = vk_api
-        self.google_api = google_api
 
         self.name_event = ''
         self.description_event = '',
@@ -55,7 +55,7 @@ class CreateEvent:
 
         self.stage = list(self.dict_create_events.keys())[0]
 
-        self.send_msg(self.dict_create_events['name_event'])
+        self.send_msg(self.dict_create_events['name_event'], delete=True)
 
         self.dict_phase_functions = {
             'name_event': self.function_name_event,
@@ -156,6 +156,13 @@ class CreateEvent:
         return False
 
     def create_event_google_api(self):
-        self.google_api.create_event(self.name_event, self.description_event, self.color_event,
-                                     self.day_month_year_event, self.time_event)
+        result = requests.post('https://web-site-google-calendar.herokuapp.com/create_event',
+                               json={'user_id': self.user_id,
+                                     'name_event': self.name_event,
+                                     'description_event': self.description_event,
+                                     'color_event': self.color_event,
+                                     'day_month_year_event': self.day_month_year_event,
+                                     'time_event': self.time_event})
+        print(result.text)
+
 
