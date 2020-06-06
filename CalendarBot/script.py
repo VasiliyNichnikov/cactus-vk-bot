@@ -124,3 +124,4 @@ class Server(WorkingDataBase):
                     self.send_msg(peer_id, 'Простите, я вас не понимаю. Введите /create_event, '
                                            'чтобы начать создавать напоминания в google календаре.')
 
+
