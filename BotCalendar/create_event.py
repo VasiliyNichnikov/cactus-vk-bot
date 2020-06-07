@@ -1,7 +1,6 @@
 import calendar
 import datetime
-import requests
-from vk_api.utils import get_random_id
+from requests import post
 
 
 class ErrorCreateEvents(Exception):
@@ -28,7 +27,19 @@ class ErrorTimeEvent(ErrorCreateEvents):
     pass
 
 
+# Возвращает день и месяц сегоднейшего дня
+def get_day_month(day, month):
+    _day = ''
+    _month = ''
+    if day < 10:
+        _day = f'0{day}'
+    if month < 10:
+        _month = f'0{month}'
+    return f'{_day}.{_month}'
+
+
 class CreateEvent:
+    # Словарь с вариантами ответов
     dict_create_events = {
         'name_event': 'Начнем создавать напоминание. Для начала введите название напоминания.',
         'description_event': 'Напишите описание напоминания. '
@@ -36,16 +47,16 @@ class CreateEvent:
                              'Вы можете написать - и тогда бот пропустит описание.',
         'color_event': 'Введите цвет, который хотите видеть у напоминания. (По умолчанию: 0)',
         'day_month_year_event': 'Введите день, в который нужно создать напоминание. день месяц.год. '
-                                'Например: 25.11.2020 (По умолчанию: сегодня)',
+                                f'Например: {get_day_month(datetime.datetime.now().day, datetime.datetime.now().month)}'
+                                f'.{datetime.datetime.now().year} '
+                                '(По умолчанию: сегодня)',
         'time_event': 'Введите время начала и конца напоминания. (Пример: 10:00-11:00)',
         'ready': 'Поздравляю, вы создали напоминание!'
     }
 
-    list_colors = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
-
-    def __init__(self, user_id, vk_api):
+    def __init__(self, user_id, parent):
         self.user_id = user_id
-        self.vk_api = vk_api
+        self.parent = parent
 
         self.name_event = ''
         self.description_event = '',
@@ -55,7 +66,8 @@ class CreateEvent:
 
         self.stage = list(self.dict_create_events.keys())[0]
 
-        self.send_msg(self.dict_create_events['name_event'], delete=True)
+        self.parent.send_msg(send_id=self.user_id, message=self.dict_create_events['name_event'],
+                             attachment=self.parent.load_image('creating_reminder.png'))
 
         self.dict_phase_functions = {
             'name_event': self.function_name_event,
@@ -65,44 +77,37 @@ class CreateEvent:
             'time_event': self.function_time_event
         }
 
-    # Отправка сообщений
-    def send_msg(self, message, attachment=None):
-        self.vk_api.messages.send(peer_id=self.user_id, message=message, random_id=get_random_id(),
-                                  attachment=attachment)
-
     def creating_reminder(self, user_msg):
         try:
-            # self.send_msg(self.dict_create_events[self.stage])
             self.dict_phase_functions[self.stage](user_msg)
             self.next_stage()
         except ErrorCreateEvents as error:
-            self.send_msg(error)
+            self.parent.send_msg(send_id=self.user_id, message=error)
 
     def function_name_event(self, user_msg):
-        self.send_msg(self.dict_create_events['description_event'])
+        self.parent.send_msg(send_id=self.user_id, message=self.dict_create_events['description_event'])
         self.name_event = user_msg
-        # self.stage = 'description_event'
 
     def function_description_event(self, user_msg):
-        self.send_msg(self.dict_create_events['color_event'])
+        self.parent.send_msg(send_id=self.user_id, message=self.dict_create_events['color_event'])
         self.description_event = user_msg
         if self.description_event == '-':
             print('Описания нет.')
             self.description_event = ''
-        # self.stage = 'color_event'
 
     def function_color_event(self, user_msg):
-        self.send_msg(self.dict_create_events['day_month_year_event'])
         self.color_event = user_msg
         if user_msg != '-':
-            if self.color_event not in self.list_colors:
-                raise ErrorColorEvent('Ошибка. Данного id нет в списке.')
+            try:
+                if 0 < int(self.color_event) and int(self.color_event) >= 9:
+                    raise ErrorColorEvent('Ошибка. Данного id нет в списке.')
+            except ValueError as e:
+                raise ErrorColorEvent('Ошибка. Вы можете использовать только цифры. От 0 до 9 включительно.')
         else:
             self.color_event = '0'
-        # self.next_stage()
+        self.parent.send_msg(send_id=self.user_id, message=self.dict_create_events['day_month_year_event'])
 
     def function_day_month_year_event(self, user_msg):
-        self.send_msg(self.dict_create_events['time_event'])
         self.day_month_year_event = user_msg
         if self.day_month_year_event != '-':
             try:
@@ -118,7 +123,7 @@ class CreateEvent:
         else:
             self.day_month_year_event = f'{datetime.datetime.now().day}.{datetime.datetime.now().month}.' \
                                         f'{datetime.datetime.now().year}'
-        # self.next_stage()
+        self.parent.send_msg(send_id=self.user_id, message=self.dict_create_events['time_event'])
 
     def function_time_event(self, user_msg):
         self.time_event = user_msg
@@ -136,9 +141,9 @@ class CreateEvent:
                 raise ErrorTimeEvent('Ошибка. Время начала и конца не может быть одинакова.')
         except ValueError as e:
             raise ErrorTimeEvent('Ошибка. Вы ввели неверное время.')
-        self.send_msg(self.dict_create_events['ready'])
+        self.parent.send_msg(send_id=self.user_id, message=self.dict_create_events['ready'],
+                             attachment=self.parent.load_image('created_reminder.png'))
         self.create_event_google_api()
-        # self.next_stage()
 
     def next_stage(self):
         list_keys_dict = list(self.dict_create_events.keys())
@@ -156,13 +161,13 @@ class CreateEvent:
         return False
 
     def create_event_google_api(self):
-        result = requests.post('https://web-site-google-calendar.herokuapp.com/create_event',
-                               json={'user_id': self.user_id,
-                                     'name_event': self.name_event,
-                                     'description_event': self.description_event,
-                                     'color_event': self.color_event,
-                                     'day_month_year_event': self.day_month_year_event,
-                                     'time_event': self.time_event})
+        result = post('https://web-site-google-calendar.herokuapp.com/create_event',
+                      json={'user_id': self.user_id,
+                            'name_event': self.name_event,
+                            'description_event': self.description_event,
+                            'color_event': self.color_event,
+                            'day_month_year_event': self.day_month_year_event,
+                            'time_event': self.time_event})
         print(result.text)
 
 

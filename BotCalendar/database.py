@@ -1,19 +1,26 @@
 import sqlite3
+import psycopg2
 from sqlite3 import Error
 
 
 class WorkingDataBase:
     def __init__(self, path):
-        self.connection = self.create_connection(path)
+        self.connection = self.create_connection()
         self.creating_table_users()
 
-    def create_connection(self, path):
-        connection = None
-        try:
-            connection = sqlite3.connect(path)
-            print('БД успешна подключена')
-        except Error as e:
-            print(f'Ошибка: {e}')
+    def create_connection(self):
+        connection = psycopg2.connect(
+            database='def1t6gfg12ltm',
+            user='rkjoyxenzvbtru',
+            password='7e72b4aa26b5b522ea719bdc923955c371bdb8bf7958a8a08d322acad28276da',
+            host='ec2-52-202-22-140.compute-1.amazonaws.com',
+            port='5432'
+        )
+        # try:
+        #     connection = sqlite3.connect(path)
+        #     print('БД успешна подключена')
+        # except Error as e:
+        #     print(f'Ошибка: {e}')
         return connection
 
     def execute_query(self, query):

@@ -3,7 +3,6 @@ from vk_api.bot_longpoll import VkBotLongPoll, VkBotEventType
 from BotCalendar.database import WorkingDataBase
 from vk_api.utils import get_random_id
 from BotCalendar.create_event import CreateEvent
-from BotCalendar.working_google_calendar import WorkingGoogleCalendarAPI
 
 '''
 /start - включение бота, бот активируется и приветствует пользователя.  
@@ -37,10 +36,20 @@ class Server(WorkingDataBase):
 
     # Отправка сообщений
     def send_msg(self, send_id, message, attachment=None):
-        print('Send Message (Main program)')
         self.vk_api.messages.send(peer_id=send_id, message=message, random_id=get_random_id(), attachment=attachment)
 
-    # Приветсие
+    #  Загрузка изображения
+    def load_image(self, name_image):
+        upload = vk_api.VkUpload(self.vk)
+        photo = upload.photo_messages(f'BotCalendar/images/{name_image}')
+        owner_id = photo[0]['owner_id']
+        photo_id = photo[0]['id']
+        access_key = photo[0]['access_key']
+        attachment = f'photo{owner_id}_{photo_id}_{access_key}'
+        print("Изображение создано")
+        return attachment
+
+    # Приветствие
     def start_bot(self, *args):
         send_id = int(args[0]['user_id'])
         self.send_msg(send_id, 'Приветствую! '
@@ -88,10 +97,9 @@ class Server(WorkingDataBase):
     def create_event(self, *args):
         send_id = int(args[0]['user_id'])
         user_msg = args[1]
-        # self.class_google_api.manual_init_user(send_id)
         if self.check_create_event(send_id):
             self.update_selected_function(send_id, 'create_event')
-            new_event = CreateEvent(send_id, self.vk_api) #, self.class_google_api)
+            new_event = CreateEvent(send_id, self)
             self.list_all_events.append(new_event)
         else:
             class_create_event = self.get_class(send_id)
@@ -109,6 +117,7 @@ class Server(WorkingDataBase):
                     return None
         return None
 
+    # Функция, которая принимает сообщения пользователя
     def start(self):
         for event in self.long_poll.listen():
             if event.type == VkBotEventType.MESSAGE_NEW:

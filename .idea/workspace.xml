@@ -2,150 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a78ce58-d61a-4b01-8c34-4615c52f3886" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/BotCalendar/Users.sqlite" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotCalendar/create_event.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotCalendar/database.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotCalendar/script.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotCalendar/working_google_calendar.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotKate/data/__all_models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotKate/data/db_session.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotKate/data/user.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotKate/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotKate/static/audios/ten_days/days_left_10.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotKate/static/audios/ten_days/days_left_2.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotKate/static/audios/ten_days/days_left_4.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotKate/static/audios/ten_days/days_left_6.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotKate/static/audios/ten_days/days_left_8.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotKate/static/fonts/Montserrat_Black.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotKate/static/images/kate_0.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotKate/static/images/kate_1.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotKate/static/images/kate_10.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotKate/static/images/kate_11.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotKate/static/images/kate_12.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotKate/static/images/kate_13.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotKate/static/images/kate_14.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotKate/static/images/kate_15.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotKate/static/images/kate_16.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotKate/static/images/kate_17.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotKate/static/images/kate_18.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotKate/static/images/kate_19.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotKate/static/images/kate_2.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotKate/static/images/kate_20.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotKate/static/images/kate_21.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotKate/static/images/kate_22.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotKate/static/images/kate_23.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotKate/static/images/kate_24.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotKate/static/images/kate_25.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotKate/static/images/kate_26.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotKate/static/images/kate_27.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotKate/static/images/kate_28.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotKate/static/images/kate_29.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotKate/static/images/kate_3.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotKate/static/images/kate_30.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotKate/static/images/kate_31.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotKate/static/images/kate_32.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotKate/static/images/kate_33.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotKate/static/images/kate_34.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotKate/static/images/kate_35.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotKate/static/images/kate_36.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotKate/static/images/kate_37.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotKate/static/images/kate_38.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotKate/static/images/kate_39.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotKate/static/images/kate_4.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotKate/static/images/kate_40.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotKate/static/images/kate_41.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotKate/static/images/kate_42.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotKate/static/images/kate_43.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotKate/static/images/kate_44.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotKate/static/images/kate_45.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotKate/static/images/kate_46.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotKate/static/images/kate_47.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotKate/static/images/kate_48.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotKate/static/images/kate_49.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotKate/static/images/kate_5.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotKate/static/images/kate_50.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotKate/static/images/kate_6.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotKate/static/images/kate_7.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotKate/static/images/kate_8.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotKate/static/images/kate_9.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotKate/static/ready_image.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotKate/work_bd.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotKate/work_image.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/BotCalendar/images/created_reminder.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CalendarBot/Users.sqlite" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CalendarBot/create_event.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CalendarBot/credentials.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CalendarBot/database.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CalendarBot/google_api_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CalendarBot/script.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CalendarBot/web_site_create_api.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CalendarBot/working_google_calendar.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KateBot/data/__all_models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KateBot/data/db_session.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KateBot/data/user.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KateBot/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KateBot/static/audios/ten_days/days_left_10.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KateBot/static/audios/ten_days/days_left_2.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KateBot/static/audios/ten_days/days_left_4.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KateBot/static/audios/ten_days/days_left_6.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KateBot/static/audios/ten_days/days_left_8.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KateBot/static/fonts/Montserrat_Black.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KateBot/static/images/kate_0.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KateBot/static/images/kate_1.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KateBot/static/images/kate_10.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KateBot/static/images/kate_11.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KateBot/static/images/kate_12.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KateBot/static/images/kate_13.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KateBot/static/images/kate_14.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KateBot/static/images/kate_15.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KateBot/static/images/kate_16.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KateBot/static/images/kate_17.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KateBot/static/images/kate_18.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KateBot/static/images/kate_19.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KateBot/static/images/kate_2.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KateBot/static/images/kate_20.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KateBot/static/images/kate_21.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KateBot/static/images/kate_22.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KateBot/static/images/kate_23.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KateBot/static/images/kate_24.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KateBot/static/images/kate_25.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KateBot/static/images/kate_26.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KateBot/static/images/kate_27.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KateBot/static/images/kate_28.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KateBot/static/images/kate_29.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KateBot/static/images/kate_3.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KateBot/static/images/kate_30.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KateBot/static/images/kate_31.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KateBot/static/images/kate_32.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KateBot/static/images/kate_33.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KateBot/static/images/kate_34.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KateBot/static/images/kate_35.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KateBot/static/images/kate_36.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KateBot/static/images/kate_37.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KateBot/static/images/kate_38.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KateBot/static/images/kate_39.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KateBot/static/images/kate_4.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KateBot/static/images/kate_40.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KateBot/static/images/kate_41.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KateBot/static/images/kate_42.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KateBot/static/images/kate_43.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KateBot/static/images/kate_44.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KateBot/static/images/kate_45.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KateBot/static/images/kate_46.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KateBot/static/images/kate_47.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KateBot/static/images/kate_48.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KateBot/static/images/kate_49.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KateBot/static/images/kate_5.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KateBot/static/images/kate_50.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KateBot/static/images/kate_6.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KateBot/static/images/kate_7.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KateBot/static/images/kate_8.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KateBot/static/images/kate_9.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KateBot/static/ready_image.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KateBot/work_bd.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KateBot/work_image.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StartServers.py" beforeDir="false" afterPath="$PROJECT_DIR$/StartServers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BotCalendar/Users.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/BotCalendar/Users.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BotCalendar/create_event.py" beforeDir="false" afterPath="$PROJECT_DIR$/BotCalendar/create_event.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BotCalendar/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/BotCalendar/database.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BotCalendar/script.py" beforeDir="false" afterPath="$PROJECT_DIR$/BotCalendar/script.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,7 +60,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Web Site Google Calendar Api" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -208,11 +71,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\vnich\YandexDisk\cactus-vk-bot\BotCalendar\images" />
       <recent name="C:\Users\vnich\YandexDisk\cactus-vk-bot\CalendarBot" />
       <recent name="C:\Users\vnich\OneDrive\cactus-vk-bot\KateBot\static\images" />
       <recent name="C:\Users\vnich\OneDrive\cactus-vk-bot\KateBot\static\audios\ten_days" />
       <recent name="C:\Users\vnich\OneDrive\cactus-vk-bot\KateBot\static\audios" />
-      <recent name="C:\Users\vnich\OneDrive\cactus-vk-bot\KateBot\static\Fonts" />
     </key>
   </component>
   <component name="RunManager" selected="Python.StartServers">
@@ -402,14 +265,8 @@
       <workItem from="1591056975103" duration="46000" />
       <workItem from="1591351642938" duration="10860000" />
       <workItem from="1591441470633" duration="92000" />
-      <workItem from="1591441640857" duration="12159000" />
-    </task>
-    <task id="LOCAL-00012" summary="Ready Two">
-      <created>1575155146948</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1575155146948</updated>
+      <workItem from="1591441640857" duration="12402000" />
+      <workItem from="1591534003462" duration="3969000" />
     </task>
     <task id="LOCAL-00013" summary="Ready Two">
       <created>1575155324749</created>
@@ -747,7 +604,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591352938915</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="Почти готовый бот. Нужно добавить красоты :)">
+      <created>1591487840076</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1591487840077</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -785,13 +649,18 @@
     <MESSAGE value="Ready bot" />
     <MESSAGE value="New Bot, Calendar Bot" />
     <MESSAGE value="Отправка бота на сервер" />
-    <option name="LAST_COMMIT_MESSAGE" value="Отправка бота на сервер" />
+    <MESSAGE value="Почти готовый бот. Нужно добавить красоты :)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Почти готовый бот. Нужно добавить красоты :)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="872" y="198" key="#Inspections" timestamp="1589152126556">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state x="872" y="198" key="#Inspections/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1589152126556" />
+    <state x="872" y="198" key="#Notifications" timestamp="1591535097950">
+      <screen x="0" y="0" width="2560" height="1080" />
+    </state>
+    <state x="872" y="198" key="#Notifications/0.0.2560.1080/2560.0.1920.1080@0.0.2560.1080" timestamp="1591535097950" />
     <state x="872" y="198" key="#SQL_Dialects" timestamp="1585908827246">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
@@ -809,40 +678,40 @@
     </state>
     <state x="1010" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1590154920343" />
     <state x="1010" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1080/2560.0.1920.1080@0.0.2560.1080" timestamp="1591355514632" />
-    <state x="934" y="134" key="CommitChangelistDialog2" timestamp="1591352938207">
+    <state x="934" y="134" key="CommitChangelistDialog2" timestamp="1591487836860">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state x="934" y="134" key="CommitChangelistDialog2/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1590760484358" />
-    <state x="934" y="134" key="CommitChangelistDialog2/0.0.2560.1080/2560.0.1920.1080@0.0.2560.1080" timestamp="1591352938207" />
+    <state x="934" y="134" key="CommitChangelistDialog2/0.0.2560.1080/2560.0.1920.1080@0.0.2560.1080" timestamp="1591487836860" />
     <state x="1060" y="294" key="FileChooserDialogImpl" timestamp="1591441685758">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state x="1060" y="294" key="FileChooserDialogImpl/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1591057026272" />
     <state x="1060" y="294" key="FileChooserDialogImpl/0.0.2560.1080/2560.0.1920.1080@0.0.2560.1080" timestamp="1591441685758" />
-    <state width="2517" height="295" key="GridCell.Tab.0.bottom" timestamp="1591487623016">
+    <state width="2517" height="295" key="GridCell.Tab.0.bottom" timestamp="1591536523641">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state width="1877" height="295" key="GridCell.Tab.0.bottom/0.0.2560.1080/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1590242024066" />
     <state width="2517" height="295" key="GridCell.Tab.0.bottom/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1590762211996" />
-    <state width="2517" height="295" key="GridCell.Tab.0.bottom/0.0.2560.1080/2560.0.1920.1080@0.0.2560.1080" timestamp="1591487623016" />
-    <state width="2517" height="295" key="GridCell.Tab.0.center" timestamp="1591487623016">
+    <state width="2517" height="295" key="GridCell.Tab.0.bottom/0.0.2560.1080/2560.0.1920.1080@0.0.2560.1080" timestamp="1591536523641" />
+    <state width="2517" height="295" key="GridCell.Tab.0.center" timestamp="1591536523641">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state width="1877" height="295" key="GridCell.Tab.0.center/0.0.2560.1080/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1590242024066" />
     <state width="2517" height="295" key="GridCell.Tab.0.center/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1590762211996" />
-    <state width="2517" height="295" key="GridCell.Tab.0.center/0.0.2560.1080/2560.0.1920.1080@0.0.2560.1080" timestamp="1591487623016" />
-    <state width="2517" height="295" key="GridCell.Tab.0.left" timestamp="1591487623015">
+    <state width="2517" height="295" key="GridCell.Tab.0.center/0.0.2560.1080/2560.0.1920.1080@0.0.2560.1080" timestamp="1591536523641" />
+    <state width="2517" height="295" key="GridCell.Tab.0.left" timestamp="1591536523641">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state width="1877" height="295" key="GridCell.Tab.0.left/0.0.2560.1080/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1590242024066" />
     <state width="2517" height="295" key="GridCell.Tab.0.left/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1590762211996" />
-    <state width="2517" height="295" key="GridCell.Tab.0.left/0.0.2560.1080/2560.0.1920.1080@0.0.2560.1080" timestamp="1591487623015" />
-    <state width="2517" height="295" key="GridCell.Tab.0.right" timestamp="1591487623016">
+    <state width="2517" height="295" key="GridCell.Tab.0.left/0.0.2560.1080/2560.0.1920.1080@0.0.2560.1080" timestamp="1591536523641" />
+    <state width="2517" height="295" key="GridCell.Tab.0.right" timestamp="1591536523641">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state width="1877" height="295" key="GridCell.Tab.0.right/0.0.2560.1080/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1590242024066" />
     <state width="2517" height="295" key="GridCell.Tab.0.right/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1590762211996" />
-    <state width="2517" height="295" key="GridCell.Tab.0.right/0.0.2560.1080/2560.0.1920.1080@0.0.2560.1080" timestamp="1591487623016" />
+    <state width="2517" height="295" key="GridCell.Tab.0.right/0.0.2560.1080/2560.0.1920.1080@0.0.2560.1080" timestamp="1591536523641" />
     <state width="2517" height="363" key="GridCell.Tab.1.bottom" timestamp="1590168743514">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
@@ -871,11 +740,11 @@
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state x="571" y="194" key="SettingsEditor/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1590760764359" />
-    <state x="872" y="273" key="Vcs.Push.Dialog.v2" timestamp="1591352947930">
+    <state x="872" y="273" key="Vcs.Push.Dialog.v2" timestamp="1591487841808">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state x="872" y="273" key="Vcs.Push.Dialog.v2/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1590760492491" />
-    <state x="872" y="273" key="Vcs.Push.Dialog.v2/0.0.2560.1080/2560.0.1920.1080@0.0.2560.1080" timestamp="1591352947930" />
+    <state x="872" y="273" key="Vcs.Push.Dialog.v2/0.0.2560.1080/2560.0.1920.1080@0.0.2560.1080" timestamp="1591487841808" />
     <state x="996" y="120" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1585912863920">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
@@ -909,6 +778,6 @@
     <SUITE FILE_PATH="coverage/cactus_vk_bot$script.coverage" NAME="script Coverage Results" MODIFIED="1591351969674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CalendarBot" />
     <SUITE FILE_PATH="coverage/cactus_vk_bot$test_google_ap.coverage" NAME="test_google_ap Coverage Results" MODIFIED="1591361390608" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CalendarBot" />
     <SUITE FILE_PATH="coverage/cactus_vk_bot$google.coverage" NAME="google Coverage Results" MODIFIED="1589026990201" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CalendarBot" />
-    <SUITE FILE_PATH="coverage/cactus_vk_bot$StartServers.coverage" NAME="StartServers Coverage Results" MODIFIED="1591487623009" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cactus_vk_bot$StartServers.coverage" NAME="StartServers Coverage Results" MODIFIED="1591536523634" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

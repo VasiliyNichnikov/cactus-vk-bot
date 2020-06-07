@@ -1,3 +1,4 @@
+requests
 alabaster==0.7.12
 altgraph==0.17
 astroid==2.3.3
