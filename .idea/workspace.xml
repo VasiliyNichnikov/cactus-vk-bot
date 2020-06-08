@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a78ce58-d61a-4b01-8c34-4615c52f3886" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/BotCalendar/images/created_reminder.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BotCalendar/Users.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/BotCalendar/Users.sqlite" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BotCalendar/create_event.py" beforeDir="false" afterPath="$PROJECT_DIR$/BotCalendar/create_event.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BotCalendar/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/BotCalendar/database.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BotCalendar/script.py" beforeDir="false" afterPath="$PROJECT_DIR$/BotCalendar/script.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StartServers.py" beforeDir="false" afterPath="$PROJECT_DIR$/StartServers.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +57,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Web Site Google Calendar Api" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -266,14 +263,7 @@
       <workItem from="1591351642938" duration="10860000" />
       <workItem from="1591441470633" duration="92000" />
       <workItem from="1591441640857" duration="12402000" />
-      <workItem from="1591534003462" duration="3969000" />
-    </task>
-    <task id="LOCAL-00013" summary="Ready Two">
-      <created>1575155324749</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1575155324749</updated>
+      <workItem from="1591534003462" duration="14236000" />
     </task>
     <task id="LOCAL-00014" summary="Weather add">
       <created>1575210587202</created>
@@ -611,7 +601,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591487840077</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="Подключение бота к БД на сервере">
+      <created>1591539163299</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1591539163299</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -650,7 +647,8 @@
     <MESSAGE value="New Bot, Calendar Bot" />
     <MESSAGE value="Отправка бота на сервер" />
     <MESSAGE value="Почти готовый бот. Нужно добавить красоты :)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Почти готовый бот. Нужно добавить красоты :)" />
+    <MESSAGE value="Подключение бота к БД на сервере" />
+    <option name="LAST_COMMIT_MESSAGE" value="Подключение бота к БД на сервере" />
   </component>
   <component name="WindowStateProjectService">
     <state x="872" y="198" key="#Inspections" timestamp="1589152126556">
@@ -678,56 +676,60 @@
     </state>
     <state x="1010" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1590154920343" />
     <state x="1010" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1080/2560.0.1920.1080@0.0.2560.1080" timestamp="1591355514632" />
-    <state x="934" y="134" key="CommitChangelistDialog2" timestamp="1591487836860">
+    <state x="934" y="134" key="CommitChangelistDialog2" timestamp="1591539161185">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state x="934" y="134" key="CommitChangelistDialog2/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1590760484358" />
-    <state x="934" y="134" key="CommitChangelistDialog2/0.0.2560.1080/2560.0.1920.1080@0.0.2560.1080" timestamp="1591487836860" />
-    <state x="1060" y="294" key="FileChooserDialogImpl" timestamp="1591441685758">
+    <state x="934" y="134" key="CommitChangelistDialog2/0.0.2560.1080/2560.0.1920.1080@0.0.2560.1080" timestamp="1591539161185" />
+    <state x="1060" y="294" key="FileChooserDialogImpl" timestamp="1591578769563">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state x="1060" y="294" key="FileChooserDialogImpl/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1591057026272" />
-    <state x="1060" y="294" key="FileChooserDialogImpl/0.0.2560.1080/2560.0.1920.1080@0.0.2560.1080" timestamp="1591441685758" />
-    <state width="2517" height="295" key="GridCell.Tab.0.bottom" timestamp="1591536523641">
+    <state x="1060" y="294" key="FileChooserDialogImpl/0.0.2560.1080/2560.0.1920.1080@0.0.2560.1080" timestamp="1591578769563" />
+    <state width="2517" height="295" key="GridCell.Tab.0.bottom" timestamp="1591580712782">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state width="1877" height="295" key="GridCell.Tab.0.bottom/0.0.2560.1080/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1590242024066" />
     <state width="2517" height="295" key="GridCell.Tab.0.bottom/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1590762211996" />
-    <state width="2517" height="295" key="GridCell.Tab.0.bottom/0.0.2560.1080/2560.0.1920.1080@0.0.2560.1080" timestamp="1591536523641" />
-    <state width="2517" height="295" key="GridCell.Tab.0.center" timestamp="1591536523641">
+    <state width="2517" height="295" key="GridCell.Tab.0.bottom/0.0.2560.1080/2560.0.1920.1080@0.0.2560.1080" timestamp="1591580712782" />
+    <state width="2517" height="295" key="GridCell.Tab.0.center" timestamp="1591580712782">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state width="1877" height="295" key="GridCell.Tab.0.center/0.0.2560.1080/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1590242024066" />
     <state width="2517" height="295" key="GridCell.Tab.0.center/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1590762211996" />
-    <state width="2517" height="295" key="GridCell.Tab.0.center/0.0.2560.1080/2560.0.1920.1080@0.0.2560.1080" timestamp="1591536523641" />
-    <state width="2517" height="295" key="GridCell.Tab.0.left" timestamp="1591536523641">
+    <state width="2517" height="295" key="GridCell.Tab.0.center/0.0.2560.1080/2560.0.1920.1080@0.0.2560.1080" timestamp="1591580712782" />
+    <state width="2517" height="295" key="GridCell.Tab.0.left" timestamp="1591580712781">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state width="1877" height="295" key="GridCell.Tab.0.left/0.0.2560.1080/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1590242024066" />
     <state width="2517" height="295" key="GridCell.Tab.0.left/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1590762211996" />
-    <state width="2517" height="295" key="GridCell.Tab.0.left/0.0.2560.1080/2560.0.1920.1080@0.0.2560.1080" timestamp="1591536523641" />
-    <state width="2517" height="295" key="GridCell.Tab.0.right" timestamp="1591536523641">
+    <state width="2517" height="295" key="GridCell.Tab.0.left/0.0.2560.1080/2560.0.1920.1080@0.0.2560.1080" timestamp="1591580712781" />
+    <state width="2517" height="295" key="GridCell.Tab.0.right" timestamp="1591580712782">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state width="1877" height="295" key="GridCell.Tab.0.right/0.0.2560.1080/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1590242024066" />
     <state width="2517" height="295" key="GridCell.Tab.0.right/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1590762211996" />
-    <state width="2517" height="295" key="GridCell.Tab.0.right/0.0.2560.1080/2560.0.1920.1080@0.0.2560.1080" timestamp="1591536523641" />
-    <state width="2517" height="363" key="GridCell.Tab.1.bottom" timestamp="1590168743514">
+    <state width="2517" height="295" key="GridCell.Tab.0.right/0.0.2560.1080/2560.0.1920.1080@0.0.2560.1080" timestamp="1591580712782" />
+    <state width="2517" height="363" key="GridCell.Tab.1.bottom" timestamp="1591558324010">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state width="2517" height="363" key="GridCell.Tab.1.bottom/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1590168743514" />
-    <state width="2517" height="363" key="GridCell.Tab.1.center" timestamp="1590168743514">
+    <state width="2517" height="363" key="GridCell.Tab.1.bottom/0.0.2560.1080/2560.0.1920.1080@0.0.2560.1080" timestamp="1591558324010" />
+    <state width="2517" height="363" key="GridCell.Tab.1.center" timestamp="1591558324010">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state width="2517" height="363" key="GridCell.Tab.1.center/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1590168743514" />
-    <state width="2517" height="363" key="GridCell.Tab.1.left" timestamp="1590168743513">
+    <state width="2517" height="363" key="GridCell.Tab.1.center/0.0.2560.1080/2560.0.1920.1080@0.0.2560.1080" timestamp="1591558324010" />
+    <state width="2517" height="363" key="GridCell.Tab.1.left" timestamp="1591558324010">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state width="2517" height="363" key="GridCell.Tab.1.left/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1590168743513" />
-    <state width="2517" height="363" key="GridCell.Tab.1.right" timestamp="1590168743514">
+    <state width="2517" height="363" key="GridCell.Tab.1.left/0.0.2560.1080/2560.0.1920.1080@0.0.2560.1080" timestamp="1591558324010" />
+    <state width="2517" height="363" key="GridCell.Tab.1.right" timestamp="1591558324010">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state width="2517" height="363" key="GridCell.Tab.1.right/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1590168743514" />
+    <state width="2517" height="363" key="GridCell.Tab.1.right/0.0.2560.1080/2560.0.1920.1080@0.0.2560.1080" timestamp="1591558324010" />
     <state x="248" y="90" key="MergeDialog" timestamp="1590169750600">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
@@ -740,11 +742,11 @@
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state x="571" y="194" key="SettingsEditor/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1590760764359" />
-    <state x="872" y="273" key="Vcs.Push.Dialog.v2" timestamp="1591487841808">
+    <state x="872" y="273" key="Vcs.Push.Dialog.v2" timestamp="1591539166971">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state x="872" y="273" key="Vcs.Push.Dialog.v2/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1590760492491" />
-    <state x="872" y="273" key="Vcs.Push.Dialog.v2/0.0.2560.1080/2560.0.1920.1080@0.0.2560.1080" timestamp="1591487841808" />
+    <state x="872" y="273" key="Vcs.Push.Dialog.v2/0.0.2560.1080/2560.0.1920.1080@0.0.2560.1080" timestamp="1591539166971" />
     <state x="996" y="120" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1585912863920">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
@@ -778,6 +780,6 @@
     <SUITE FILE_PATH="coverage/cactus_vk_bot$script.coverage" NAME="script Coverage Results" MODIFIED="1591351969674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CalendarBot" />
     <SUITE FILE_PATH="coverage/cactus_vk_bot$test_google_ap.coverage" NAME="test_google_ap Coverage Results" MODIFIED="1591361390608" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CalendarBot" />
     <SUITE FILE_PATH="coverage/cactus_vk_bot$google.coverage" NAME="google Coverage Results" MODIFIED="1589026990201" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CalendarBot" />
-    <SUITE FILE_PATH="coverage/cactus_vk_bot$StartServers.coverage" NAME="StartServers Coverage Results" MODIFIED="1591536523634" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cactus_vk_bot$StartServers.coverage" NAME="StartServers Coverage Results" MODIFIED="1591580712776" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

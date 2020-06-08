@@ -19,10 +19,9 @@ class Server(WorkingDataBase):
     }
 
     # CalendarBot/Users.sqlite
-    def __init__(self, api_token, group_id, server_name, path_database):
-        super().__init__(path_database)
-        self.reset_selected_function()
-        self.path_database = path_database
+    def __init__(self, api_token, group_id, server_name):
+        super().__init__()
+        #  self.reset_selected_function()
         self.server_name = server_name
         self.vk = vk_api.VkApi(token=api_token)
         self.long_poll = VkBotLongPoll(self.vk, group_id)
@@ -123,11 +122,10 @@ class Server(WorkingDataBase):
             if event.type == VkBotEventType.MESSAGE_NEW:
                 peer_id = event.object.message['from_id']
                 user_message = str(event.object.message['text']).lower()
-                # Проверяем, есть ли пользователь в БД
-                if not self.get_user(peer_id):
-                    self.add_user(peer_id)
-
                 info_user = self.get_user(peer_id)
+                # Проверяем, есть ли пользователь в БД
+                if not info_user:
+                    self.add_user(peer_id)
                 if self.get_command_user(user_message) is not None:
                     self.get_command_user(user_message)['function'](info_user, user_message)
                 elif info_user is not None and info_user['selected_function'] == 'create_event':

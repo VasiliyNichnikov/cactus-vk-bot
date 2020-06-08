@@ -9,5 +9,5 @@ app_token = "d20982366e78b639274c82289794f835b5ac469e8001e2c7e5667e5ed673d1262d6
 
 
 if __name__ == '__main__':
-    server_calendar_bot = Server(vk_api_token, 187407860, 'Calendar Bot', 'BotCalendar/Users.sqlite')
+    server_calendar_bot = Server(vk_api_token, 187407860, 'Calendar Bot')
     server_calendar_bot.start()
