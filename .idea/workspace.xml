@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1a78ce58-d61a-4b01-8c34-4615c52f3886" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BotCalendar/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/BotCalendar/database.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BotCalendar/script.py" beforeDir="false" afterPath="$PROJECT_DIR$/BotCalendar/script.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StartServers.py" beforeDir="false" afterPath="$PROJECT_DIR$/StartServers.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -263,14 +260,7 @@
       <workItem from="1591351642938" duration="10860000" />
       <workItem from="1591441470633" duration="92000" />
       <workItem from="1591441640857" duration="12402000" />
-      <workItem from="1591534003462" duration="14236000" />
-    </task>
-    <task id="LOCAL-00014" summary="Weather add">
-      <created>1575210587202</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1575210587202</updated>
+      <workItem from="1591534003462" duration="14500000" />
     </task>
     <task id="LOCAL-00015" summary="Weather function update">
       <created>1575400065172</created>
@@ -608,7 +598,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591539163299</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="Бот подключен к БД. Остается настроить ответы, если пользователя нет в БД google, но при этом он пытается создать напоминание.">
+      <created>1591581082730</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1591581082730</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -648,7 +645,8 @@
     <MESSAGE value="Отправка бота на сервер" />
     <MESSAGE value="Почти готовый бот. Нужно добавить красоты :)" />
     <MESSAGE value="Подключение бота к БД на сервере" />
-    <option name="LAST_COMMIT_MESSAGE" value="Подключение бота к БД на сервере" />
+    <MESSAGE value="Бот подключен к БД. Остается настроить ответы, если пользователя нет в БД google, но при этом он пытается создать напоминание." />
+    <option name="LAST_COMMIT_MESSAGE" value="Бот подключен к БД. Остается настроить ответы, если пользователя нет в БД google, но при этом он пытается создать напоминание." />
   </component>
   <component name="WindowStateProjectService">
     <state x="872" y="198" key="#Inspections" timestamp="1589152126556">
@@ -676,11 +674,11 @@
     </state>
     <state x="1010" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1590154920343" />
     <state x="1010" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1080/2560.0.1920.1080@0.0.2560.1080" timestamp="1591355514632" />
-    <state x="934" y="134" key="CommitChangelistDialog2" timestamp="1591539161185">
+    <state x="934" y="134" key="CommitChangelistDialog2" timestamp="1591581080517">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state x="934" y="134" key="CommitChangelistDialog2/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1590760484358" />
-    <state x="934" y="134" key="CommitChangelistDialog2/0.0.2560.1080/2560.0.1920.1080@0.0.2560.1080" timestamp="1591539161185" />
+    <state x="934" y="134" key="CommitChangelistDialog2/0.0.2560.1080/2560.0.1920.1080@0.0.2560.1080" timestamp="1591581080517" />
     <state x="1060" y="294" key="FileChooserDialogImpl" timestamp="1591578769563">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
@@ -742,11 +740,11 @@
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state x="571" y="194" key="SettingsEditor/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1590760764359" />
-    <state x="872" y="273" key="Vcs.Push.Dialog.v2" timestamp="1591539166971">
+    <state x="872" y="273" key="Vcs.Push.Dialog.v2" timestamp="1591581085606">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state x="872" y="273" key="Vcs.Push.Dialog.v2/0.0.2560.1080/-1920.0.1920.1080@0.0.2560.1080" timestamp="1590760492491" />
-    <state x="872" y="273" key="Vcs.Push.Dialog.v2/0.0.2560.1080/2560.0.1920.1080@0.0.2560.1080" timestamp="1591539166971" />
+    <state x="872" y="273" key="Vcs.Push.Dialog.v2/0.0.2560.1080/2560.0.1920.1080@0.0.2560.1080" timestamp="1591581085606" />
     <state x="996" y="120" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1585912863920">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
